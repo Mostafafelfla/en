@@ -34,8 +34,8 @@ jobs:
 
       - name: Download & Extract from Google Drive
         run: |
-          # تحميل الملف المضغوط باستخدام الـ ID الخاص بيك
-          gdown --id 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
+          # تحميل الملف المضغوط باستخدام الـ ID الخاص بيك (بدون كلمة --id)
+          gdown 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
           
           # فك الضغط في مجلد مؤقت
           unzip -q site.zip -d extracted
