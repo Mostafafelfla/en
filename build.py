@@ -1,48 +1,63 @@
 import os
 import json
+import shutil
 from bs4 import BeautifulSoup
 
-# --- 1. البحث التلقائي عن مسار الموقع بعد فك الضغط ---
-def get_base_dir():
-    for root, dirs, files in os.walk("public"):
-        if "choose-exam.html" in files:
-            return root
-    return "public"
-
-BASE_DIR = get_base_dir()
+# --- 1. الإعدادات والمسارات ---
+BASE_DIR = "public"
 ASSETS_DIR = os.path.join(BASE_DIR, "assets")
 JS_FILE_NAME = "offline_logic.js"
 JS_FILE_PATH = os.path.join(ASSETS_DIR, JS_FILE_NAME)
 
-print(f"📁 مسار العمل الرئيسي: {BASE_DIR}")
+SECTION_FILES = {
+    "Listening": "listening-test-instruction.html",
+    "Reading": "reading-test-instruction.html",
+    "Writing": "writing-test-instruction.html",
+    "Speaking": "speaking-test-instruction.html"
+}
 
-# --- 2. قواميس التصحيح ---
-SECTION_FILES = {"Listening": "listening-test-instruction.html", "Reading": "reading-test-instruction.html", "Writing": "writing-test-instruction.html", "Speaking": "speaking-test-instruction.html"}
-LINK_MAPPING = {"/listening/": "Listening/listening-test-instruction.html", "/reading/": "Reading/reading-test-instruction.html", "/writing/": "Writing/writing-test-instruction.html", "/speaking/": "Speaking/speaking-test-instruction.html"}
-NEXT_MAPPING = {"../Listening/part_001.html": "../Listening/listening-test-instruction.html", "../Reading/part_001.html": "../Reading/reading-test-instruction.html", "../Writing/part_001.html": "../Writing/writing-test-instruction.html", "../Speaking/part_001.html": "../Speaking/speaking-test-instruction.html"}
+LINK_MAPPING = {
+    "/listening/": "Listening/listening-test-instruction.html",
+    "/reading/": "Reading/reading-test-instruction.html",
+    "/writing/": "Writing/writing-test-instruction.html",
+    "/speaking/": "Speaking/speaking-test-instruction.html",
+    "/complete-test-instruction/": "Complete/complete-test-instruction.html"
+}
 
-# --- 3. تشغيل جميع عمليات التنظيف والصيانة ---
-def run_fixes():
-    print("🧹 جاري تنظيف الموقع وإصلاح الروابط وتحديث الداشبورد...")
+NEXT_SECTION_MAPPING = {
+    "../Listening/part_001.html": "../Listening/listening-test-instruction.html",
+    "../Reading/part_001.html": "../Reading/reading-test-instruction.html",
+    "../Writing/part_001.html": "../Writing/writing-test-instruction.html",
+    "../Speaking/part_001.html": "../Speaking/speaking-test-instruction.html"
+}
+
+# --- 2. التنظيف وإصلاح الروابط وتعديل الأسماء ---
+def clean_and_fix():
+    print("🧹 جاري تنظيف الموقع وإصلاح الروابط...")
+    
+    # الخطوة أ: إعادة تسمية ملفات part_001.html
     for root, dirs, files in os.walk(BASE_DIR):
         folder_name = os.path.basename(root)
-        
-        # أ) إعادة التسمية للملف الأول
-        if folder_name.startswith("Exam_"):
+        if "Exam_" in root:
             for sec, target in SECTION_FILES.items():
-                p1 = os.path.join(root, sec, "part_001.html")
-                pt = os.path.join(root, sec, target)
-                if os.path.exists(p1): os.rename(p1, pt)
-        
-        # ب) تعديل محتوى الـ HTML
+                if sec in root:
+                    p1 = os.path.join(root, "part_001.html")
+                    pt = os.path.join(root, target)
+                    if os.path.exists(p1):
+                        os.rename(p1, pt)
+
+    # الخطوة ب: تعديل محتوى ملفات HTML
+    for root, dirs, files in os.walk(BASE_DIR):
         for file_name in files:
             if not file_name.endswith(".html"): continue
             file_path = os.path.join(root, file_name)
+            
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
                     soup = BeautifulSoup(f, "html.parser")
                 modified = False
 
+                # 1. إزالة Complete Test وتصحيح روابط take-exam
                 if file_name == "take-exam.html":
                     for a in soup.find_all("a", class_="dropdown-item"):
                         href = a.get("href", "")
@@ -52,20 +67,22 @@ def run_fixes():
                             else: a.decompose()
                             modified = True
                         else:
-                            for k, v in LINK_MAPPING.items():
-                                if k in href:
-                                    a["href"] = v
+                            for key, correct_path in LINK_MAPPING.items():
+                                if key in href:
+                                    a["href"] = correct_path
                                     modified = True
                                     break
-                
+
+                # 2. تغيير الاسم إلى Moaz في الداشبورد
                 if file_name == "student-dashboard.html":
                     for p in soup.find_all("p"):
                         if p.text and "Welcome to" in p.text:
                             b = p.find("b")
-                            if b and b.string != "Moaz":
-                                b.string = "Moaz"
+                            if b:
+                                b.string = "z"
                                 modified = True
 
+                # 3. إزالة الروابط الزائدة من الـ Navbar
                 for a in soup.find_all("a", class_="nav-link"):
                     if a.text and a.text.strip() in ["My Marks", "Billing", "Logout"]:
                         li = a.find_parent("li", class_="nav-item")
@@ -73,53 +90,63 @@ def run_fixes():
                         else: a.decompose()
                         modified = True
 
+                # 4. ربط الأقسام ببعضها (زر Next)
                 for a in soup.find_all("a", href=True):
-                    if a["href"] in NEXT_MAPPING:
-                        a["href"] = NEXT_MAPPING[a["href"]]
+                    if a["href"] in NEXT_SECTION_MAPPING:
+                        a["href"] = NEXT_SECTION_MAPPING[a["href"]]
                         modified = True
 
                 if modified:
                     with open(file_path, "w", encoding="utf-8") as f:
                         f.write(str(soup))
             except Exception as e:
-                pass
+                print(f"⚠️ خطأ في معالجة {file_path}: {e}")
 
-# --- 4. بناء خريطة الأسئلة الذكية ---
+# --- 3. بناء خريطة الأسئلة الذكية ---
 def build_master_map():
-    print("🗺️ جاري بناء خريطة الأسئلة للعقل الأوفلاين...")
-    master = {}
+    print("🗺️ جاري مسح الامتحانات لبناء 'خريطة الأسئلة' الدقيقة...")
+    master_map = {}
     for root, dirs, files in os.walk(BASE_DIR):
-        parts = root.split(os.sep)
-        exam = next((p for p in parts if p.startswith("Exam_")), None)
-        sec = next((p for p in parts if p in ["Listening", "Reading", "Writing", "Speaking"]), None)
-        if exam and sec:
-            if exam not in master: master[exam] = {}
-            if sec not in master[exam]: master[exam][sec] = []
-            
-            p_files = [f for f in files if f.startswith("part_") and f.endswith(".html")]
-            p_files.sort()
-            for f in p_files:
-                try:
-                    with open(os.path.join(root, f), "r", encoding="utf-8") as html_f:
-                        s = BeautifulSoup(html_f, "html.parser")
-                        radios = s.find_all("input", type="radio")
-                        if radios:
-                            names = sorted(list(set([r.get("name") for r in radios if r.get("name")])))
-                            for n in names: master[exam][sec].append(f"{f}_radio_{n}")
-                        
-                        selects = s.find_all("select")
-                        if selects:
-                            for i in range(len(selects)):
-                                master[exam][sec].append(f"{f}_select_{str(i).zfill(2)}")
-                except: pass
-    return master
+        path_parts = root.split(os.sep)
+        exam = next((p for p in path_parts if p.startswith("Exam_")), None)
+        section = next((p for p in path_parts if p in ["Listening", "Reading", "Writing", "Speaking"]), None)
 
-# --- 5. زراعة العقل الأوفلاين في الموقع ---
+        if exam and section:
+            if exam not in master_map: master_map[exam] = {}
+            if section not in master_map[exam]: master_map[exam][section] = []
+
+            # استخراج ملفات الأسئلة وترتيبها
+            part_files = [f for f in files if (f.startswith("part_") or f.endswith("-instruction.html")) and f.endswith(".html")]
+            part_files.sort() 
+
+            for f in part_files:
+                file_path = os.path.join(root, f)
+                try:
+                    with open(file_path, "r", encoding="utf-8") as html_f:
+                        soup = BeautifulSoup(html_f, "html.parser")
+                        
+                        # تتبع أسئلة الاستماع
+                        radios = soup.find_all("input", type="radio")
+                        if radios:
+                            names = list(set([r.get("name") for r in radios if r.get("name")]))
+                            names.sort()
+                            for name in names:
+                                master_map[exam][section].append(f"{f}_radio_{name}")
+                                
+                        # تتبع أسئلة القراءة
+                        selects = soup.find_all("select")
+                        if selects:
+                            for i, sel in enumerate(selects):
+                                padded_index = str(i).zfill(2)
+                                master_map[exam][section].append(f"{f}_select_{padded_index}")
+                except: pass
+    return master_map
+
+# --- 4. زراعة العقل الأوفلاين ---
 def inject_offline_logic():
     master_map = build_master_map()
     map_json = json.dumps(master_map)
     
-    # كود الجافاسكريبت المحدث
     js_code = f"""
     const MASTER_MAP = {map_json};
 
@@ -175,7 +202,10 @@ def inject_offline_logic():
         if (fileName === 'answer-key.html') {{
             const rows = document.querySelectorAll('#dev-table tr');
             let score = 0;
-            let expectedKeys = (MASTER_MAP[exam] && MASTER_MAP[exam][section]) ? MASTER_MAP[exam][section] : [];
+            let expectedKeys = [];
+            if (MASTER_MAP[exam] && MASTER_MAP[exam][section]) {{
+                expectedKeys = MASTER_MAP[exam][section];
+            }}
             
             rows.forEach((row, index) => {{
                 if (index === 0) return;
@@ -187,8 +217,8 @@ def inject_offline_logic():
                     const iconCell = tds[3];
                     let studentAnsDisplay = "No Answer";
                     let isCorrect = false;
-                    let qIndex = index - 1; 
 
+                    let qIndex = index - 1; 
                     if (qIndex < expectedKeys.length) {{
                         let baseKey = `${{exam}}_${{section}}_${{expectedKeys[qIndex]}}`;
                         let savedText = localStorage.getItem(baseKey + '_text');
@@ -199,12 +229,12 @@ def inject_offline_logic():
                             let studentLower = savedText.toLowerCase();
                             
                             if (correctAnsOriginal.length === 1 && /^[A-E]$/i.test(correctAnsOriginal)) {{
-                                if (savedVal && savedVal.startsWith("Option")) {{
-                                    let optionNum = savedVal.replace("Option", "");
-                                    let optionLetter = String.fromCharCode(64 + parseInt(optionNum)).toLowerCase();
-                                    studentAnsDisplay = String.fromCharCode(64 + parseInt(optionNum));
-                                    if (optionLetter === correctAns) isCorrect = true;
-                                }}
+                                 if (savedVal && savedVal.startsWith("Option")) {{
+                                     let optionNum = savedVal.replace("Option", "");
+                                     let optionLetter = String.fromCharCode(64 + parseInt(optionNum)).toLowerCase();
+                                     studentAnsDisplay = String.fromCharCode(64 + parseInt(optionNum));
+                                     if (optionLetter === correctAns) isCorrect = true;
+                                 }}
                             }} else {{
                                 if (studentLower === correctAns || correctAns.includes(studentLower) || studentLower.includes(correctAns)) {{
                                     isCorrect = true;
@@ -251,11 +281,12 @@ def inject_offline_logic():
     }});
     """
 
+    print(f"⚙️ جاري تحديث ملف العقل الأوفلاين ({JS_FILE_NAME})...")
     os.makedirs(ASSETS_DIR, exist_ok=True)
     with open(JS_FILE_PATH, "w", encoding="utf-8") as f:
         f.write(js_code)
 
-    print("💉 جاري حقن كود الجافاسكريبت في صفحات الموقع...")
+    print("💉 جاري زراعة الكود في صفحات الموقع...")
     for root, dirs, files in os.walk(BASE_DIR):
         for file_name in files:
             if not file_name.endswith(".html"): continue
@@ -265,17 +296,22 @@ def inject_offline_logic():
                     soup = BeautifulSoup(f, "html.parser")
                 
                 rel_asset_path = os.path.relpath(JS_FILE_PATH, root).replace('\\', '/')
-                script_exists = any(s.get("src") == rel_asset_path for s in soup.find_all("script"))
-                
+                script_exists = False
+                for script in soup.find_all("script"):
+                    if script.get("src") == rel_asset_path:
+                        script_exists = True
+                        break
+                        
                 if not script_exists:
                     new_script = soup.new_tag("script", src=rel_asset_path)
                     if soup.body:
                         soup.body.append(new_script)
                         with open(file_path, "w", encoding="utf-8") as f:
                             f.write(str(soup))
-            except: pass
-    print("✅ تمت العملية بنجاح! الموقع جاهز للنشر.")
+            except Exception as e:
+                pass
 
 if __name__ == "__main__":
-    run_fixes()
+    clean_and_fix()
     inject_offline_logic()
+    print("✅ تمت جميع العمليات بنجاح! الموقع جاهز للنشر.")
