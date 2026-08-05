@@ -1,24 +1,12 @@
-name: Deploy CELPIP Offline
+name: Build and Push Processed Files
 
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -34,13 +22,8 @@ jobs:
 
       - name: Download & Extract from Google Drive
         run: |
-          # تحميل الملف المضغوط باستخدام الـ ID الخاص بيك (بدون كلمة --id)
           gdown 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
-          
-          # فك الضغط في مجلد مؤقت
           unzip -q site.zip -d extracted
-          
-          # البحث عن المجلد الأساسي ونقل الملفات إلى public
           ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
           mkdir -p public
           mv "$ROOT_DIR"/* public/
@@ -48,14 +31,19 @@ jobs:
       - name: Run Build Script (Python Fixes)
         run: python build.py
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Move processed files to root for repository storage
+        run: |
+          # حذف الملفات القديمة من المستودع ما عدا ملفات الـ workflows وبايثون
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name '.github' ! -name 'build.py' ! -name 'README.md' -exec rm -rf {} +
+          
+          # نقل الملفات المعالجة من public إلى الجذر الرئيسي للمستودع
+          cp -r public/* ./
+          rm -rf public
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './public'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and Push Processed Files to Main
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Auto-processed and fixed exam files [skip ci]" || exit 0
+          git push
