@@ -314,4 +314,12 @@ def inject_offline_logic():
 if __name__ == "__main__":
     clean_and_fix()
     inject_offline_logic()
+    
+    # حل مشكلة الـ 404 بدون كسر الروابط
+    choose_exam_path = os.path.join(BASE_DIR, "choose-exam.html")
+    index_path = os.path.join(BASE_DIR, "index.html")
+    if os.path.exists(choose_exam_path):
+        shutil.copy(choose_exam_path, index_path)
+        print("✅ تم إنشاء نسخة مطابقة باسم index.html بنجاح لتجنب خطأ 404.")
+
     print("✅ تمت جميع العمليات بنجاح! الموقع جاهز للنشر.")
