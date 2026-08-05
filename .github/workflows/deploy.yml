@@ -3,7 +3,7 @@ name: Deploy CELPIP Offline
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: # يسمح لك بتشغيل السكريبت يدوياً
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -34,11 +34,13 @@ jobs:
 
       - name: Download & Extract from Google Drive
         run: |
-          # تحميل الملف المضغوط من الرابط الخاص بك
+          # تحميل الملف المضغوط باستخدام الـ ID الخاص بيك
           gdown --id 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
+          
+          # فك الضغط في مجلد مؤقت
           unzip -q site.zip -d extracted
           
-          # استخراج الملفات للمجلد العام (public)
+          # البحث عن المجلد الأساسي ونقل الملفات إلى public
           ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
           mkdir -p public
           mv "$ROOT_DIR"/* public/
