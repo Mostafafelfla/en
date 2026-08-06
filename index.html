@@ -148,5 +148,27 @@
 <script src="assets/asset_8.js"></script>
 <script src="assets/asset_9.js"></script>
 <script src="assets/asset_10.js"></script>
-<script src="assets/offline_logic.js"></script></body>
+<script src="assets/offline_logic.js"></script><script>
+  // كود مخصص لإصلاح زر Start (القائمة المنسدلة)
+  document.addEventListener("DOMContentLoaded", function() {
+    const startBtn = document.getElementById("dropdownMenuButton1");
+    if(startBtn) {
+        const dropdownMenu = startBtn.nextElementSibling;
+
+        startBtn.addEventListener("click", function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          // تبديل ظهور القائمة
+          dropdownMenu.classList.toggle("show");
+        });
+
+        // إخفاء القائمة عند الضغط في أي مكان آخر في الصفحة
+        document.addEventListener("click", function(event) {
+          if (!startBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove("show");
+          }
+        });
+    }
+  });
+</script></body>
 </html>
