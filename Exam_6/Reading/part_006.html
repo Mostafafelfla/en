@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="rJuUPwzdoZisfoYdW34yIw0X0MLRRQ9QgKUWA2i2zmnttuL6QE17tHXreG8sTK4O"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 03 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">On social media and blogs, many people throw caution to the wind when it comes to privacy—not just their own but that of their family members as well. Social media sites do have community standards, but, except in extreme cases, there’s little consensus on what’s socially appropriate to post and what isn’t. For this reason, many believe that parents should exercise some restraint in order to protect their children from future shame or ridicule stemming from online postings of their toddler pictures.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">During the last decade, a growing number of proud parents have shared details about their babies and young children on blogs. Amy Smith, a Toronto stay-at-home mother of two-year-old twins, says she blogs because it’s “a way of sharing my worries and getting advice. It’s lonely and scary being a new mom.” She values the virtual connection with moms all over the world in similar situations. Edmontonian Jenn Oakley, a software developer on maternity leave, admits that blogging serves as a familiar activity that offsets the intense challenges of parenthood. “I feel competent doing anything on the computer,” she says, “but I feel like a struggling newbie being a mother.”</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Blogging may be a refreshing relief from changing diapers and laundering bibs, but Vancouver psychologist Janice Kimmel warns that parents need to stop and think before publicly sharing the details of their children’s lives. “A blog is forever,” she says. “Once they’re adolescents, kids tend to be mortified if they find their baby pictures or toddler misadventure tales online.” Halifax event planner Doris Jones was shocked to learn from her ten-year-old that his friends were mocking him about a picture they’d found on her blog. “It was an innocent picture of my son and his sister in the bathtub when they were toddlers. There are millions of photos like this on the net, but still my son’s been the butt of jokes all year at school.” Janice Kimmel isn’t surprised. “We must respect our children’s privacy,” she cautions. “Before you post, think about your child’s future.”</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. Which statement would Smith and Oakley agree with?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Blogging about a baby is harder than raising a baby.</option>
+<option value="Option2">Blogging helps reduces the stress of sudden lifestyle changes.</option>
+<option value="Option3">Parents should accept some isolation as unavoidable.</option>
+<option value="Option4">Parents should keep their parenting stories private.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. What can we most reasonably conclude from the article?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Bloggers should use a name that hides their true identity.</option>
+<option value="Option2">Childcare skills do not come naturally to all women.</option>
+<option value="Option3">Kids are safer if strangers don’t know about their lives.</option>
+<option value="Option4">Parents should think before sharing some details online.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. Which title best captures the MAIN idea?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Blogs Comfort Moms but Risk Kids’ Privacy</option>
+<option value="Option2">Newbie Parents Dispel Fears by Blogging</option>
+<option value="Option3">Parental Blogging is a Fast Growing Trend</option>
+<option value="Option4">Software Developer Turns Mommy Blogger</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. Who would be most interested in reading this article?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">high school students with younger siblings</option>
+<option value="Option2">first-time stay-at-home mothers</option>
+<option value="Option3">psychologists specializing in child abuse</option>
+<option value="Option4">social media application developers</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. We can conclude that parenting blogs are a</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">benefit to families.</option>
+<option value="Option2">contentious issue.</option>
+<option value="Option3">no-win situation.</option>
+<option value="Option4">threat to toddlers.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">I wish parent blogs had been around when my kids were little. I totally agree that they</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">instruct moms in the proper way of</option>
+<option value="Option2">provide easy entertainment when</option>
+<option value="Option3">reduce the workload involved in</option>
+<option value="Option4">relieve some of the stress of</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">caring for a baby. For the stay-at-home new moms you profile,</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">feeling capable in</option>
+<option value="Option2">keeping busy with</option>
+<option value="Option3">offering advice on</option>
+<option value="Option4">posting photos of</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">at least one parent-related activity is clearly very important. Like the author, I think that moms need to understand that blogs are</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">boring to readers</option>
+<option value="Option2">public and everlasting</option>
+<option value="Option3">far too time consuming</option>
+<option value="Option4">too harmful to children</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. Like Doris Jones' ten-year-old, I would certainly feel</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">amused</option>
+<option value="Option2">embarrassed</option>
+<option value="Option3">offended</option>
+<option value="Option4">unsafe</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">if I found an online photo of myself as a fat little toddler splashing au naturel in the water. That would be my mother’s favourite picture, but she’d keep it in her wallet, for her eyes only. If bloggers remembered how and where their own moms displayed their baby pictures, maybe there’d be more</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">eagerness</option>
+<option value="Option2">discretion</option>
+<option value="Option3">modesty</option>
+<option value="Option4">safety</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        .<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

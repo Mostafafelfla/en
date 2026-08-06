@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 10;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="mTJjYwkQnW6XfSwnCxM6B78oRmiKGdNcbU9lJ23FyjbYtYjgw8JFmi5S5gFlI7Ia"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 05 - Reading Part 3: Reading for Information</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">10 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_006.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div class="instruction"><p>Read the following passage.</p></div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A. With most Canadians living in the southern part of the country, much of Canada's 9.9 million square kilometres is uninhabited. Consequently, outdoor wilderness activities—such as hunting, fishing, camping, hiking, and canoeing—are suitable pastimes. Of these, camping has the widest appeal. More than one third of Canadian households contain camping equipment, and about one quarter of the population camps each and every year. More than 37 national parks plus innumerable provincial parks and private campgrounds regularly attract camping enthusiasts and issue thousands of permits each year.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">B. The most common camping choices in Canada range from posh, fully-equipped motorhomes to rustic wilderness camping with whatever the hiker can carry in a backpack. The most lavish option, the 6- to 13-metre-long motorhome, consumes tremendous amounts of fuel and requires large parking spaces in campgrounds. These campers should reserve their campsites well in advance. Retired couples sometimes take a year or more to travel around North America this way, perhaps in a cavalcade of up to a hundred vehicles. Another option is the RV trailer, which is shorter but requires a towing vehicle. RV trailers are far cheaper than motorhomes but still provide the conveniences of home.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">C. In Canada, motorhomes and RVs are costly to buy or rent and to use. For those requiring a cheaper alternative and willing to forgo homey conveniences, the lightweight tent trailer is a possibility. Typically costing less than $10,000, it's easy to pull and manoeuvre. Essentially, it's a collapsible tent-like structure mounted on a rectangular four-sided box attached to two wheels. The interior varies with the model, the more expensive ones including a rustic kitchen, beds, running water, and an electrical hookup. More stable than a tent, which sits on the ground, its construction may still lead to camper discomfort during extreme weather.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">D. Less restrictive and more economical than other mobile accommodations, tents can be used along designated hiking trails or in established campgrounds; though, regulations prevent tenters from pitching a tent anywhere they choose. Driving or biking from campsite to campsite stretch of the Trans-Canada highway, for example, has campgrounds that cater to motorhomes, tent trailers, and tenters. Some campgrounds have running water and showers, whereas others have only outhouses and outdoor cold-water taps. Reservations are accepted for any type of camping. Websites and books are available with detailed information about campsites in each province, facilitating vacation planning for adventurous campers.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">E. Not given in any of the above paragraphs.</p>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<div class="instruction">
+<p>
+            Decide which paragraph, A to D, has the information given in each
+            statement below. Select E if the information is not given in any of
+            the paragraphs.
+          </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 2em;
+          ">
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -1. Camping’s popularity in Canada is evidenced by the percentage of frequent campers.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -2. Certain types of camping cannot be done spontaneously.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -3. Some people who prefer one style of camping enjoy travelling in groups.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -4. Camping is a growing trend among wilderness enthusiasts.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -5. Campers should check where they are permitted to set up camp.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -6. Campsites are evenly spaced across the country.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -7. People who use motorhomes bring a second vehicle with them.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -8. Some campers choose a middle ground between luxury and rustic camping.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -9. Some camping equipment is less able to withstand unpleasant conditions.
+            </div>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

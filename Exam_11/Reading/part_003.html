@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<script>
+    var timeLimitInMinutes = 11;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="WuCQfXHhePpHSXarFvJrPGPUW7ihFk60Lv2S0tq6pcuI63Xkz6G0ARMoa1FSHe1Y"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 07 - Reading Part 1: Reading Correspondence</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">11 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<p style="font-size: min(2vw, 16px); font-weight: 700">To whom it may concern,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">My name is Janet White and I am a tenant at your residential rental property, Garden Plaza, at 257 Pine Street, Apartment 502. I am writing to bring your attention to an ongoing issue regarding a broken heater in my rental unit. Unfortunately, even after numerous complaints, the problem has yet to be solved. As you can imagine, I am feeling very frustrated by the whole ordeal.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">To recap, the heater in the living room of my apartment is broken. The average temperature in this room is between 15–17⁰C during the day and even lower at night. This is unacceptable as the local bylaw states that the landlord must keep the heat in rental apartments at a minimum of 20⁰C from October to April. I often work from home and find it hard to accomplish anything when I am freezing cold. I have had to purchase a small electric heater to keep myself warm which costs me money on my electricity bill. This is unfair because heat is supposed to be included in the rent I pay. In addition to my frustration with insufficient heat, there has been a lack of communication on your end about what has been done to solve the issue. The superintendent has never contacted me to let me know whether anyone has come to check out the heater. I had to call the head office on Tuesday, January 3rd, to find if there had been any attempt to rectify the problem. I was upset to find out that nothing had been done, even after submitting three complaint forms and leaving multiple voicemail messages about the issue.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">At this point I am extremely disgruntled with the situation and the poor service I have received from your company. It has been over 3 weeks that I’ve been trying to deal with this problem. I feel that the manner in which this issue is being handled is completely unacceptable. I would like this situation to be resolved as soon as possible. I would also like to be contacted by your manager or supervisor at Johnson Realty Management to discuss what can be done to make up for the time, money, and frustration this issue has caused me.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Sincerely,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Janet White</p>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            1. Janet wrote this letter because
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">her apartment doesn’t have heat.</option>
+<option value="Option2">her heater hasn’t been fixed.</option>
+<option value="Option3">she had to buy a small heater.</option>
+<option value="Option4">her apartment is overheated.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            2. Janet mentions the local bylaw to
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">show that she’s a lawyer.</option>
+<option value="Option2">prove that her rent is too high.</option>
+<option value="Option3">get paid for her heater purchase.</option>
+<option value="Option4">support her complaint.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            3. How does Janet feel?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">annoyed</option>
+<option value="Option2">worried</option>
+<option value="Option3">relieved</option>
+<option value="Option4">sad</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            4. Janet wrote this letter to
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">someone at Johnson Realty Management.</option>
+<option value="Option2">someone at Garden Plaza.</option>
+<option value="Option3">the superintendent of Garden Plaza.</option>
+<option value="Option4">the supervisor of Jefferson Realty Management.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            5. After Janet’s earlier complaints, the superintendent
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">called management.</option>
+<option value="Option2">left messages on Janet’s phone.</option>
+<option value="Option3">tried to make repairs.</option>
+<option value="Option4">did nothing.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            6. Janet expects Johnson Realty to
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">fix her heat today.</option>
+<option value="Option2">pay for her portable heater.</option>
+<option value="Option3">get in touch with her.</option>
+<option value="Option4">move her to a new apartment.</option>
+</select>
+</div>
+</div>
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Here is a response to the message. Complete the response by filling in
+          the blanks. Select the best choice for each blank from the drop-down
+          menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Dear Ms. White,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">My staff passed on to me your message regarding</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the temperature in your apartment</option>
+<option value="Option2">the complaint about your electricity bill</option>
+<option value="Option3">your purchased electric heater</option>
+<option value="Option4">your reference to the local bylaw</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. Steps have already been taken to solve the problem, and a replacement heater is on order. Immediately after it arrives, we will make arrangements with you to</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">return</option>
+<option value="Option2">repair</option>
+<option value="Option3">install</option>
+<option value="Option4">purchase</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">it.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">There are several broken heater units in Garden Plaza apartments. Your superintendent has reported these and requested replacements. Our usually</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">considerate</option>
+<option value="Option2">efficient</option>
+<option value="Option3">talkative</option>
+<option value="Option4">over-worked</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">staff have been laid low with the flu. Hence, we are not completing work at our usual fast pace. I apologize for the inconvenience.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">I can meet with you any afternoon next week to</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">make an apology</option>
+<option value="Option2">receive compensation</option>
+<option value="Option3">discuss the situation</option>
+<option value="Option4">review the bylaw</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. Please telephone to make an appointment.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">Alice Jefferson</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline"></p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            11.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">Secretary</option>
+<option value="Option2">Janitor</option>
+<option value="Option3">Technician</option>
+<option value="Option4">Manager</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Johnson Realty Management  
+            <!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

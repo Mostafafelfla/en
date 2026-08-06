@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="WQu4eYUQnlYLI8scMDLFqbQnGPbsVb69LRU6ZuDFyI3MWef5GeIebmNRUJy3X517"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 17 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Smartphones and other technological paraphernalia have invaded our lives. We are now surrounded by people eschewing social etiquette by compulsively checking their phones, drawn automatically to the incessant "ding" of their notifications. The ubiquity and nature of this modern technology have made concentrating on anything for more than a moment feel like a Herculean task. Young children are particularly at risk, since their neurological development is not yet complete.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">The impression that children are negatively affected by personal computing devices is reflected in anecdotal evidence from classrooms, where teachers increasingly report shortened attention spans in pupils. Lisa Cranberg, a veteran elementary school teacher, believes that “exposure to technology is rewiring our kids' brains.” For her, “children spending extended periods of time interacting solely with their smartphones is showing diminished self-awareness, emotional intelligence, and focus.” In essence, she believes that overstimulation is making it difficult for students to concentrate in a traditional lecture-centric classroom.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Not everyone is as anxious, however, about technological advances. Dr. Clara Hughes of the University of Waterloo agrees that shifts in stimuli are resulting in cerebral rewiring, with ramifications that might include shorter attention spans. However, she claims that developing these mechanisms that allow us to partake in rapid-fire attention shifting is actually “beneficial to creative types whose job is to amalgamate disparate ideas.” She surmises that our brains are simply adapting to the level of stimulation inherent to our environment.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">In fact, while technology can be harmful to concentration, a new wave of research is unearthing a whole slew of unforeseen beneficial effects. “Modern technology is bettering our ability to multitask and concentrate in short bursts,” according to neuropsychologist Dr. Mark Levinson. This means that “we get a better sense of what deserves our attention, and there is an improved selection of the information we commit to memory.”</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dr. Hughes is more moderate in her analysis, saying that “overexposure and gadget addiction do have a demonstrably negative effect on many cognitive behaviours.” Nevertheless, she concurs with Dr. Levinson’s overall beneficial assessment of the neurological side-effects of our interactions with digital technologies.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. The intent of the first paragraph is to</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">complain about a technology-linked decline in social skills.</option>
+<option value="Option2">describe recent advances in digital communication technology.</option>
+<option value="Option3">criticize the detrimental overuse of communication devices.</option>
+<option value="Option4">warn about how smartphones may impact children's brains.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. Ms. Cranberg’s opinion stems from her</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">experiences with her own children.</option>
+<option value="Option2">observations over the years.</option>
+<option value="Option3">research on emotional intelligence.</option>
+<option value="Option4">use of traditional lectures.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. Dr. Hughes' main point is that our</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">behaviour indicates shortened attention spans.</option>
+<option value="Option2">brains are benefiting by becoming more creative.</option>
+<option value="Option3">behaviours are being negatively affected.</option>
+<option value="Option4">brains are adapting to new technologies.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. Dr. Hughes and Ms. Cranberg would agree that</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">communication technology overuse may lower emotional intelligence.</option>
+<option value="Option2">smartphones may contribute to higher academic achievement.</option>
+<option value="Option3">electronic devices can foster creativity in young people.</option>
+<option value="Option4">children can better multi-task thanks to electronic devices.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. Dr. Levinson would likely agree that</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">children can benefit from using technological devices.</option>
+<option value="Option2">the impacts of digital devices deserve more attention.</option>
+<option value="Option3">our brains need stimulation from digital devices.</option>
+<option value="Option4">technological devices can harm our memory processes.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">I've never really thought about the effect of emerging technologies on neurological development, but as a parent of four youngsters, this piece certainly piqued my interest! After reading the various viewpoints, I felt that</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the author</option>
+<option value="Option2">Dr. Hughes</option>
+<option value="Option3">Ms. Cranberg</option>
+<option value="Option4">Dr. Levinson</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">neglected to mention the potentially negative consequences of diminishing attention spans.</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">This article also disparages the</option>
+<option value="Option2">Additionally, the stakeholders ignore</option>
+<option value="Option3">But I agree that there are</option>
+<option value="Option4">Only the teacher appreciates the</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">numerous valuable effects of human-computer interactions, such as improvements in the ability to simultaneously execute multiple activities, assemble contrasting information, and sort out facts. Meanwhile, I was disappointed by the alarmist views on</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the declining quality of homework</option>
+<option value="Option2">disorderly student behaviours</option>
+<option value="Option3">teachers' reporting practices</option>
+<option value="Option4">students and electronic devices</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">expressed by Ms. Cranberg.</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">New informational inputs</option>
+<option value="Option2">Modified cognitive behaviours</option>
+<option value="Option3">Children’s improved curiosity</option>
+<option value="Option4">Tried-and-true teaching methods</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">should be a blessing for teachers and classrooms.</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">When teachers are tired of</option>
+<option value="Option2">If children are not engaged by</option>
+<option value="Option3">Since technology has improved</option>
+<option value="Option4">Unless students prefer</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         traditional educational methods, as Ms. Cranberg insinuates, then these methods need to be adapted to the way children consume information in their daily lives.<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

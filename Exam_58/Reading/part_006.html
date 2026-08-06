@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="RQAlFmF6i633qFGdHQ3RDRldo3oC7UhLGR0nqSoVtt84ELt6Br0qo2iHCXLd9OcJ"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 22 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">As the world grapples with the effects of climate change, the shift towards green energy solutions has become more critical than ever. Solar, wind, and hydroelectric power are leading the charge in reducing carbon footprints and promoting sustainable energy consumption. James Green, a renewable energy advocate, points out that governments worldwide are investing heavily in these technologies, aiming to phase out fossil fuels and mitigate the adverse impacts of global warming.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">In recent years, Sophia Reynolds, an expert in solar energy, highlights that solar energy has seen significant advancements. She notes that the efficiency of solar panels has increased dramatically, and the cost of production has decreased, making it more accessible to the average consumer. David Morgan, a wind energy engineer, mentions that wind energy, too, has made strides with the development of more efficient turbines and the expansion of offshore wind farms, which harness stronger and more consistent winds than those on land.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Hydroelectric power remains a staple in renewable energy, particularly in regions with abundant water resources. It offers a reliable and steady supply of electricity and has been pivotal in stabilizing national grids. However, it’s not without its challenges. Environmental concerns about the impact on aquatic ecosystems and the displacement of communities continue to be issues that need addressing.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">One of the most promising developments in green energy is the rise of energy storage solutions. Sophia Reynolds also emphasizes that battery technology, in particular, has evolved, allowing for better storage of excess energy produced during peak production times. This stored energy can then be used during periods of high demand, ensuring a consistent and reliable power supply. Innovations like these are crucial for overcoming the intermittent nature of renewable energy sources.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Despite these advancements, the transition to green energy is not without obstacles. Infrastructure upgrades, high initial costs, and policy hurdles are significant barriers that need to be overcome. James Green suggests that governments and the private sector must collaborate to create an environment conducive to these changes, with supportive policies, subsidies, and incentives to encourage widespread adoption.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">The future of green energy is bright, with continued research and development paving the way for more efficient and cost-effective solutions. As awareness grows and technologies advance, the dream of a sustainable, carbon-neutral world becomes increasingly attainable.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. Solar energy has become more accessible due to</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">government subsidies</option>
+<option value="Option2">increased efficiency and reduced costs</option>
+<option value="Option3">community solar programs</option>
+<option value="Option4">international agreements</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. James Green mentions one challenge associated with hydroelectric power is</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">the high cost of implementation</option>
+<option value="Option2">its impact on aquatic ecosystems</option>
+<option value="Option3">the inconsistency of water supply</option>
+<option value="Option4">the lack of suitable locations</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. Sophia Reynolds notes that a major benefit of energy storage solutions is that they</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">reduce the cost of electricity</option>
+<option value="Option2">ensure a consistent power supply</option>
+<option value="Option3">are easy to implement</option>
+<option value="Option4">eliminate the need for renewable energy sources</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. David Morgan explains that wind energy has improved through</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">better policy support</option>
+<option value="Option2">community involvement</option>
+<option value="Option3">the development of more efficient turbines</option>
+<option value="Option4">reduced environmental impact</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. The author believes that the transition to green energy</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">is already complete</option>
+<option value="Option2">will not happen</option>
+<option value="Option3">requires more collaboration</option>
+<option value="Option4">is unnecessary</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">After reading today’s article, I was impressed to learn about the advancements in green energy, particularly how</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">wind energy has remained constant</option>
+<option value="Option2">solar energy has become more accessible</option>
+<option value="Option3">hydroelectric power has no issues</option>
+<option value="Option4">energy storage is irrelevant</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. It’s amazing to see how</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the government has stopped supporting green energy</option>
+<option value="Option2">fossil fuels are making a comeback</option>
+<option value="Option3">the public opposes green energy</option>
+<option value="Option4">battery technology has evolved</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">, allowing for better use of renewable resources. However, I’m concerned about</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the impact on aquatic ecosystems</option>
+<option value="Option2">the high cost of solar panels</option>
+<option value="Option3">the unreliability of wind energy</option>
+<option value="Option4">the lack of energy storage solutions</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">, which seems to be a significant drawback. To truly embrace green energy, we need</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">to eliminate all hydroelectric power plants</option>
+<option value="Option2">supportive policies and subsidies</option>
+<option value="Option3">to ignore environmental impacts</option>
+<option value="Option4">fewer renewable energy sources</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. Overall, it’s clear that while there are challenges,</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the future of green energy is promising</option>
+<option value="Option2">fossil fuels are here to stay</option>
+<option value="Option3">renewable energy is a myth</option>
+<option value="Option4">governments should stop investing in green technology</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        .<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

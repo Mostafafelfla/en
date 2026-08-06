@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 10;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="sad1k1rJv4LEBXDobkuLJAVSBboV0a1rhbD35xayGrQFP3qh5VrkuLSmP5Lw24Wp"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 07 - Reading Part 3: Reading for Information</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">10 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_006.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div class="instruction"><p>Read the following passage.</p></div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A. Despite the increasing prevalence of purchasing and banking through electronic means, Canadian banknotes—commonly referred to as “carrying cash”—remain an important part of Canadian society. However, with the convenience of carrying cash also comes the risk of counterfeiting, or producing imitation currency without authorization from the government. Counterfeiting accounts for millions of dollars of losses to Canadian businesses and individuals each year. To combat this problem, the Bank of Canada introduced new polymer bills in 2013. These durable new bills are considered to be some of the most secure banknotes in the world.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">B. The new series of polymer notes is designed in a way which is meant to portray the Canadian spirit of innovation and to celebrate Canada’s national and international achievements. Each bill depicts a different innovation or event that has been a crucial aspect of Canadian history. The five-dollar bill, for example, illustrates the Canadarm2—an important contribution made to the International Space Station in April, 2001. The twenty-dollar bill depicts the Canadian National Vimy Memorial in honour of the sacrifices made by Canadians during the First World War. The one-hundred-dollar bill shows an insulin bottle to commemorate the 1922 discovery of insulin as a treatment for diabetes by Canadian researchers.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">C. In addition to visually representing Canada, the new polymer bills are also designed to be more functional and environmentally friendly. The bills are able to withstand temperatures ranging from -75 to 140 degrees Celsius, are harder to tear, and do not absorb moisture, thereby allowing them to be wiped clean with a damp cloth. These improvements mean that, when properly handled, the new bills last up to 2.5 times longer than their paper predecessors. This increased lifespan and ability to be recycled means that polymer notes accomplish the important goal of reducing environmental impact.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">D. Most importantly, the new polymer bills include a wide range of security features that are easy to verify and difficult to counterfeit. These features include raised ink located in various places on the surface of the bill, visual details such as transparent text and metallic features, and hidden numbers that can only be detected using an incandescent light. However, in spite of these innovative features, the best security against counterfeiting is still education. This is why front-line employees in Canadian businesses are taught to be both diligent and cautious when dealing in cash transactions.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">E. Not given in any of the above paragraphs.</p>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<div class="instruction">
+<p>
+            Decide which paragraph, A to D, has the information given in each
+            statement below. Select E if the information is not given in any of
+            the paragraphs.
+          </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 2em;
+          ">
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -1. The new bills display visual representations of important accomplishments.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -2. Polymer notes contain features that make them more durable than paper bills.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -3. Banks are unable to reimburse businesses for losses caused by counterfeiting.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -4. Polymer bills contain improvements that help prevent illegal imitations.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -5. Canadians use multiple forms of payment in their daily lives.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -6. The features on polymer bills took several years to design and develop.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -7. Polymer bills were developed in response to security concerns.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -8. Surveillance by individuals is also important to combat counterfeiting.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -9. Paper bills only have half of polymer bills’ security features.
+            </div>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

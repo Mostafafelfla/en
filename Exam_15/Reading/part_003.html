@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<script>
+    var timeLimitInMinutes = 11;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="LtuFpBVkN40jMkMKEmiQC6E0o5l72TMzAuUHa7E9Yr5k0qzDyXfpnhBuCZII4NHx"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 11 - Reading Part 1: Reading Correspondence</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">11 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dear Mr. Meyer,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">I am writing about the new driving restrictions your government department is suggesting for new drivers in the province. I definitely agree that certain restrictions are necessary to ensure road safety. However, I disagree with one major point.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Your department is proposing a “single passenger” restriction that allows a novice driver to have one passenger, unless the passengers are immediate family members. Your logic is simply that novice drivers are usually teenagers, and a car full of teenagers is distracting to the driver. You state that this rule has done much to reduce the incidence of crashes in other provinces.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">There is simply no conclusive evidence to support this claim. In fact, there’s a major reason why the “one-passenger” rule might actually lead to more accidents on the road. Take for example a situation that happened last Saturday. My 16-year-old son, John, who recently got his novice driver’s license, needed to work on a school project with five of his classmates. They were making a short film for their history class, which required them to drive around the city visiting various museums. John has use of my van, which seats six people. Under the current law, he can drive his friends. He is a safe driver and no accidents happened. Under the proposed restriction, John would be legally allowed to drive only one passenger. His friends, who are also new drivers, would then have to take two other vehicles. Therefore, the “one-passenger” rule would actually triple the possibility of a crash by requiring the use of three cars, when only one was needed! Where’s the safety in that?</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Because most novice drivers are teenagers, the proposal for the “one-passenger” rule will lead to more inexperienced teenage drivers being on the road at one time. Where two or three teenagers are following each other in separate cars, they may act foolishly by driving too fast or passing dangerously. I recognize the good intention behind your proposal, but I wonder if it will actually be effective.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Sincerely,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">James Brandt</p>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            1. James Brandt is a
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">teenage driver.</option>
+<option value="Option2">driving instructor.</option>
+<option value="Option3">new driver’s parent.</option>
+<option value="Option4">novice driver.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            2. The proposed rule will prohibit new drivers from carrying
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">more than one non-family passenger.</option>
+<option value="Option2">teenagers as passengers.</option>
+<option value="Option3">non-family members as passengers.</option>
+<option value="Option4">other new drivers as passengers.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            3. According to James, the proposed rule
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">may reduce accidents by new drivers.</option>
+<option value="Option2">is based on a careful study of the facts.</option>
+<option value="Option3">is unfair for the parents of new drivers.</option>
+<option value="Option4">may increase the risk of accidents.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            4. If the proposed rule becomes law, John
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">can’t drive his 5 classmates.</option>
+<option value="Option2">can drive a van with 5 passengers.</option>
+<option value="Option3">can drive without his parent’s knowledge.</option>
+<option value="Option4">can’t drive his family members.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            5. John
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">acted irresponsibly with his passengers.</option>
+<option value="Option2">didn’t take any passengers.</option>
+<option value="Option3">knows his responsibilities as a driver.</option>
+<option value="Option4">was pressured to drive foolishly and dangerously.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            6. James Brandt believes the proposed rule
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">might stop new drivers from practicing.</option>
+<option value="Option2">will put more new drivers on the road.</option>
+<option value="Option3">may prevent young people from getting around.</option>
+<option value="Option4">will make parents of new drivers more responsible.</option>
+</select>
+</div>
+</div>
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Here is a response to the message. Complete the response by filling in
+          the blanks. Select the best choice for each blank from the drop-down
+          menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Dear Mr. Brandt,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">On behalf of Gerry Meyer, I would like to thank you for</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">sharing your opinions.</option>
+<option value="Option2">supporting our policies.</option>
+<option value="Option3">explaining the rules to your son.</option>
+<option value="Option4">suggesting the “single passenger” rule.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline"> You argued that the “single passenger” restriction</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">will stop young drivers from helping their families.</option>
+<option value="Option2">is a very good way to increase road safety.</option>
+<option value="Option3">may increase the risk of accident and injury.</option>
+<option value="Option4">will teach young drivers to be more responsible.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">We understand your concerns. In fact, we initially shared your concerns about this issue. However, research has shown us that our proposed rule will work. We found that the highest risk of accidents occurs when young drivers are driving</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">in separate cars.</option>
+<option value="Option2">family members.</option>
+<option value="Option3">their parents.</option>
+<option value="Option4">several teenagers.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline"> In addition, research shows that parents often discourage their teenagers from driving with their friends, so the proposed rule actually</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">disagrees with</option>
+<option value="Option2">supports</option>
+<option value="Option3">results from</option>
+<option value="Option4">contradicts</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">majority opinion.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">Clearly, we both</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            11.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">agree with the new proposal.</option>
+<option value="Option2">care about the safety of young drivers.</option>
+<option value="Option3">have concerns about the new proposal.</option>
+<option value="Option4">disagree with Mr. Brandt’s ideas.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Respectfully yours,  
+            
+        <!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Mariel Singh  
+            <!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<script>
+    var timeLimitInMinutes = 11;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="j0fWdlubar1j3FZfOBjq1UxiKxcNLUmi81FYYRd0lO6khLM8IcgZM5uMYrzoNOhg"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 04 - Reading Part 1: Reading Correspondence</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">11 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dear Mr. Stevens,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">I am writing in response to your article that appeared in the April 22nd edition of the Vancouver Sun. In your article, you suggested that people do not take public transit to get to work because of infrequent service. You used the example of how, recently, you had to wait 25 minutes for a bus to the downtown area. As a transit operator, I can assure you that incidents such as yours are rarely the fault of the bus service. Perhaps the focus of your frustration should be directed to city planning officials and residents' commuting habits.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Buses depart from their first station at a particular time, and the schedule of stops along the route is approximately calculated to be correct. However, various factors can interfere with the schedule. The bus may be delayed because of exceptionally heavy roadway congestion or accidents.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">I have been working for the Regional Transit System for 10 years. When I first started, there were not enough buses operating to meet commuter needs. However, things have improved greatly in the past few years. They have increased the number of buses and the frequency of service. As well, they have introduced new bus routes from several Vancouver suburbs into the downtown core. During peak hours (Monday to Friday from 7:30 a.m. to 9:30 a.m. and 4:30 p.m. to 7:00 p.m.), we double the number of buses in operation. In fact, in Greater Vancouver, the typical waiting time for a bus commuter during peak hours now averages 4 to 8 minutes, much lower than other cities such as Calgary and Edmonton.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">I assure you that the main problem in public transit today is that we are severely outnumbered by single-passengers' privately-owned vehicles. Despite incentives to encourage public transport, such as affordable prices and free parking lots at the stations, the number of cars on the road suggests the public still finds it more convenient to drive to work. However, if they considered the financial costs of driving, as well as the effect of car exhaust on the environment, they would find that public transit offers a practical and worthwhile alternative, not to mention that it would allow you to arrive to work on time.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Sincerely,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Ed Hooper</p>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            1. Mr. Stevens' opinion was based on
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">expert opinions.</option>
+<option value="Option2">a personal experience.</option>
+<option value="Option3">public interviews.</option>
+<option value="Option4">a city planning study.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            2. Mr. Stevens received this letter because he
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">wrote an article for a local paper.</option>
+<option value="Option2">works in the city planning department.</option>
+<option value="Option3">wrote a letter of complaint to Mr. Hooper.</option>
+<option value="Option4">is one of the city's transit system experts.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            3. Ed Hooper believes late buses are caused by
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">too much traffic.</option>
+<option value="Option2">mistakes in bus schedules.</option>
+<option value="Option3">bad route planning.</option>
+<option value="Option4">poorly trained bus drivers.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            4. According to Ed, transit services
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">improved only in suburban areas.</option>
+<option value="Option2">are learning from other cities.</option>
+<option value="Option3">are less popular than private cars.</option>
+<option value="Option4">need more routes to the downtown core.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            5. Mr. Hooper thinks public transport is better because
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">it is safer than driving in the winter.</option>
+<option value="Option2">buses connect the city with the countryside.</option>
+<option value="Option3">it's more environmentally friendly.</option>
+<option value="Option4">the number of commuters has increased greatly.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            6. How does Regional Transit Services try to keep buses on time?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">reducing the number of bus stops on the route</option>
+<option value="Option2">making sure buses start the route on time</option>
+<option value="Option3">reducing the number of cars on the road</option>
+<option value="Option4">improving the transit service computer systems</option>
+</select>
+</div>
+</div>
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Here is a response to the message. Complete the response by filling in
+          the blanks. Select the best choice for each blank from the drop-down
+          menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">I completely agree with Mr. Hooper that bus drivers and other transit workers</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">should take charge</option>
+<option value="Option2">are often unreliable</option>
+<option value="Option3">show great promise</option>
+<option value="Option4">aim to be on time</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. I also agree that bus services</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">have deteriorated</option>
+<option value="Option2">are inconvenient</option>
+<option value="Option3">have gotten better</option>
+<option value="Option4">are too slow</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">, at least in some places. However, Mr. Hooper needs to appreciate this problem from the passenger's point of view. Although it is true that there are a lot more</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">roads</option>
+<option value="Option2">buses</option>
+<option value="Option3">accidents</option>
+<option value="Option4">trains</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline"> now, there are a lot more people, too. Sometimes I can't even get on because it is full. It's nice to see recent improvements such as</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">bigger buses</option>
+<option value="Option2">discounted bus tickets</option>
+<option value="Option3">car pool programs</option>
+<option value="Option4">expanded services</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. However, more needs to be done, as in some areas, service still needs improvement.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">I don't blame the bus drivers, but the Regional Transit System is unreliable. Although I agree with Mr. Hooper that taking a bus may be</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            11.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">much more interesting</option>
+<option value="Option2">less time consuming</option>
+<option value="Option3">far less costly</option>
+<option value="Option4">much more convenient</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         than driving, I think that many people likely prefer comfort. Driving might be the only option.  
+            <!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

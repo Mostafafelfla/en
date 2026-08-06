@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="ltDIApnWXhZ9Pnq1ofwtwGkfyI3O2TUtau3KlV6L8E4a3tdUiQt2hRhJMCqp4NPr"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 06 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A recent visit to Canada by Turks and Caicos Premier, Rufus Ewing, resparked interest in Canada’s annexation of the country. Turks and Caicos, a Caribbean archipelago of 40 islands, has been a point of interest in Canada’s history. This most recent debate marks the third time in the last century that Ottawa politicians have pushed to make the territory Canada’s eleventh province. With over 300 kilometres of beaches, the tropical paradise would certainly be a welcome asset.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Ewing hailed Canada as a role model of fiscal responsibility from which his country could learn, accolades that resounded in Ottawa on the foreign leader's recent diplomatic junket to spur bilateral trade and tourism. When asked about the possibility of Turks and Caicos becoming a Canadian province, the Premier skirted the issue. He said he would not dismiss the idea completely, but he also offered us a glimmer of hope with the tantalizing observation that “there is no marriage without some kind of relationship first.”</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Liberal politician Peter Goldring is spearheading the latest campaign for the annexation and feels that much of the legwork has already been done. According to Goldring, “Canada has the greatest proportion of foreign investment in Turks and Caicos, and the second highest number of tourists to the country. Annexation would permit further growth in these areas.” Goldring also argues that the island could serve as a gateway to Latin America. “The location would be ideal for military support from Ottawa and particularly for disaster relief,” he adds.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Disappointingly, Conservative politician Janice Bloom calls the whole idea a pipe dream. “Canada is not in the business of annexing tropical islands,” she claims. “Annexation would be extremely complicated since it would involve changes to the islands’ tax and health care systems.” Bloom contends that the government has more pressing matters.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Yet, according to a recent poll, the majority of the islands’ residents support the proposal. Cab driver Ron Douglas says he’d love the opportunity to work in Alberta’s oil industry. However, he admits the primary concern of many locals is that Canada’s rules are too strict. “They go against the laid-back attitude of us islanders.”</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. Ewing visited Ottawa to</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">strengthen economic ties.</option>
+<option value="Option2">discuss joining Canada.</option>
+<option value="Option3">study financial policies.</option>
+<option value="Option4">boost investment in Canada.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. Arguments presented in favour of annexation suggest</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">improved regulations for both countries.</option>
+<option value="Option2">increased opportunities for both parties.</option>
+<option value="Option3">increased tourism in both countries.</option>
+<option value="Option4">improved health care for both parties.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. Janice Bloom believes that annexing Turks and Caicos is</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">a shared Canadian dream.</option>
+<option value="Option2">a pointless proposition.</option>
+<option value="Option3">a worthy cause to pursue.</option>
+<option value="Option4">a pressing government issue.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. Inhabitants of Turks and Caicos</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">lead a different lifestyle than Canadians.</option>
+<option value="Option2">want to speed up the process of joining Canada.</option>
+<option value="Option3">have high rates of unemployment.</option>
+<option value="Option4">value their independence from foreign powers.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. The author of the article is</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">in favour of the proposal.</option>
+<option value="Option2">skeptical about the prospect.</option>
+<option value="Option3">opposed to the annexation.</option>
+<option value="Option4">surprised by the reactions.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">I have to admit, reading that Canada could potentially</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">enter into business with a Caribbean paradise</option>
+<option value="Option2">forge new diplomatic ties with Turks and Caicos</option>
+<option value="Option3">incorporate a group of sunny southern islands</option>
+<option value="Option4">promote low-cost travel throughout the Caribbean</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">made my day. To be honest, however, I am not at all surprised that</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">Ewing remained largely silent on the matter</option>
+<option value="Option2">Goldring felt he has done all that he can</option>
+<option value="Option3">Bloom thought Ewing has better things to do</option>
+<option value="Option4">Douglas feared a Canadian job might be too hard</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. Turks and Caicos officials have approached the Canadian government before regarding the issue, and were rejected each time. As Ewing insinuates, they likely</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">feel resentment toward</option>
+<option value="Option2">desire compensation from</option>
+<option value="Option3">need an incentive from</option>
+<option value="Option4">want to avoid relations with</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">Canada now. I am, however, shocked by the</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">arrogantly overconfident Liberal position</option>
+<option value="Option2">evidently guileful Turks and Caicos Premier</option>
+<option value="Option3">highly reluctant Turks and Caicos resident</option>
+<option value="Option4">tersely dismissive Conservative position</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. You’d think if there was any financial gain to be had, they would be the first on board. However, I do agree with Bloom's sentiment that at present, it is perhaps</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">too late to implement</option>
+<option value="Option2">an urgent political matter</option>
+<option value="Option3">an unfeasible scheme</option>
+<option value="Option4">too burdensome for businesses</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        .<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

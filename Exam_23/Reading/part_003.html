@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<script>
+    var timeLimitInMinutes = 11;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="B1eHrQsFWsGcYfN2Zmpgcad1tvJGBEMIq2EJcmbu7PLdclAVTXmPXlavHp6hDyHG"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 19 - Reading Part 1: Reading Correspondence</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">11 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<p style="font-size: min(2vw, 16px); font-weight: 700">To: Senior Managers, Prairie West Credit Union</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">From: Richard Poole, President and CEO</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Subject: MEMO – CONFIDENTIAL: Monitoring computer use</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dear Senior Managers,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Like all banks, Prairie West thinks that data security is absolutely necessary. As a result, last month we improved our computer network by dividing it into separate, secure sub-networks for each department. This will ensure that if there is a cyberattack, it will not affect the entire system. We have a very experienced Information Technology (IT) team that knows what to do if a cyberattack happens. However, we will be doing more in the upcoming months.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Studies show that over 64% of employees visit non-work-related websites and over 84% read and send personal emails while they are at work. When employees use our company’s computer network for personal activities, they can negatively impact not only their productivity but also their personal security. Visiting certain websites or downloading attachments can lead to identity theft and put our network at risk. Our system could be infected by harmful programs such as spyware and viruses. The creators of these programs would then have access to sensitive information, such as customers’ credit card and bank account numbers. As you know, our customers depend on that information not becoming public.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Like many organizations, we block certain websites, and we have rules against personal emailing. However, staff do not always follow these policies, and new websites appear more quickly than we can block them. Therefore, starting next month, we will monitor all employees’ internet use. We hope that this will discourage employees from inappropriate online behaviour that puts our company’s data at risk.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">We know that monitoring employees can lead to low staff morale and feelings of distrust, especially if the company doesn’t let the staff know about it first. Therefore, we have decided to inform employees that we will be doing this, even though it would be possible for us to monitor them secretly. Thus, I am asking all senior managers to present the new policy, in detail, to their staff at their next department meeting.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">If any of you would like to speak with me about this request, please contact me. As always, I welcome your feedback and suggestions.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Regards,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Richard</p>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            1. What recently happened at this company?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">It suffered a cyberattack.</option>
+<option value="Option2">It expanded its IT department.</option>
+<option value="Option3">It experienced many threats.</option>
+<option value="Option4">It created several networks.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            2. Why is blocking websites ineffective?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">The company has too many networks.</option>
+<option value="Option2">The computer systems are too old.</option>
+<option value="Option3">The internet is growing too quickly.</option>
+<option value="Option4">The IT team is too busy.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            3. The memo is quite
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">formal.</option>
+<option value="Option2">casual.</option>
+<option value="Option3">entertaining.</option>
+<option value="Option4">unfriendly.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            4. The writer is concerned that his decision could lead to
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">disorganized departments.</option>
+<option value="Option2">dissatisfied employees.</option>
+<option value="Option3">untrustworthy managers.</option>
+<option value="Option4">worried customers.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            5. The writer thinks programs to watch employees should be
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">avoided.</option>
+<option value="Option2">explained.</option>
+<option value="Option3">optional.</option>
+<option value="Option4">free.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            6. What does the writer ask the readers to do?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">speak to their staff</option>
+<option value="Option2">talk to their manager</option>
+<option value="Option3">forward this memo to staff</option>
+<option value="Option4">attend a meeting with him</option>
+</select>
+</div>
+</div>
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Here is a response to the message. Complete the response by filling in
+          the blanks. Select the best choice for each blank from the drop-down
+          menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Hello Richard,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">I'm writing regarding your memo about</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">hiring new IT professionals</option>
+<option value="Option2">monitoring our staff's internet use</option>
+<option value="Option3">updating our virus software</option>
+<option value="Option4">protecting our customers’ accounts</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. It’s clear from what you’ve said that our IT department</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">requires network security training</option>
+<option value="Option2">has made many mistakes in the past</option>
+<option value="Option3">needs to hire more qualified staff</option>
+<option value="Option4">is informed about how to respond</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">, and security is obviously important for our business. I agree with you that some type of monitoring</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">might be a terrible mistake</option>
+<option value="Option2">would raise staff morale</option>
+<option value="Option3">is likely to gain acceptance</option>
+<option value="Option4">is essential in our business</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">, but I’m not sure that you’re taking the best approach. As you’ve mentioned, studies show that many employees are currently</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">creating personal risks for themselves</option>
+<option value="Option2">reducing their personal internet use</option>
+<option value="Option3">sharing private customer information</option>
+<option value="Option4">improving their productivity online</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">, and I’m not sure that your solution will change that. Your message suggests that only</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            11.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">banks are at risk of information theft</option>
+<option value="Option2">personal online activities are a problem</option>
+<option value="Option3">professionals are responsible for security</option>
+<option value="Option4">staff are trying to harm the network</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         . However, I think the problem has other causes and other possible solutions which I encourage you to consider. Perhaps you could meet with all the senior managers to discuss other alternatives.  
+            
+        <!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Best,  
+            
+        <!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Matt Lubin  
+            
+        <!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Senior Manager, Operations  
+            <!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

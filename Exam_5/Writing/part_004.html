@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Writing Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 26;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = '0' + minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + ':' + seconds);
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    a {
+      color: whitesmoke;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    .wrapper-class input[type="radio"] {
+      
+    }
+    .wrapper-class{
+      display: inline-flex;
+      align-content: center;
+    }
+    .wrapper-class label {
+      margin: 0 0 0 15px;
+      display: inline;
+    }
+    .wrapper-class p {
+          margin: 0;
+        }
+
+    #texts {
+      padding-left: 25px;
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="g5EvkVr9znxLVbWKnAxcGWoP41QvUR6d564x5raYKKCM9hJDhbuLr7ljiVd6WL1b"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 02 - Writing Task 2: Responding to Survey Questions</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">26:00</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="../Speaking/speaking-test-instruction.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-5" id="left">
+<div class="instruction">
+<p>Read the following information.</p>
+</div>
+<div>
+<p id="texts"><b>Online vs. Print News Survey</b></p>
+<p id="texts">Your local newspaper is experiencing low sales of its newspapers since many readers are now choosing the online version. Its current number of online subscribers is now three times the number of print subscribers. The newspaper has sent a survey to all of its print and online subscribers to see whether there is enough demand to keep the print version.</p>
+</div>
+</div>
+<div class="col-md-7" id="right">
+<div>
+<div class="instruction">
+<p>Choose the option that you prefer. Explain the reasons for your choice. Why do you prefer your choice? Write about 150-200 words.</p>
+</div>
+<br/>
+<div class="question-container">
+<div style="margin: 0 0 15px 0">
+<div class="wrapper-class">
+<input id="option1" name="option" type="radio" value="OptionA"/>
+<label for="option1">
+<p id="writingOptions"><b>Option A: </b>Stop producing the print version of the newspaper.</p>
+</label>
+</div>
+<div class="wrapper-class">
+<input id="option2" name="option" type="radio" value="OptionB"/>
+<label for="option2">
+<p id="writingOptions"><b>Option B: </b>Keep producing both the print and online versions.</p>
+</label>
+</div>
+</div>
+<p class="result" style="font-size: min(1.6vw, 14px); font-weight: 700">
+            Word Count: <span id="word">0</span>
+</p>
+<textarea id="area" name="answer" style="width: 100%; height: 300px; display: none"></textarea>
+<script>
+            let area = document.getElementById("area");
+            let char = document.getElementById("char");
+            let word = document.getElementById("word");
+
+            area.addEventListener("input", function () {
+              // count characters
+              let content = this.value;
+
+              // remove empty spaces from start and end
+              content.trim();
+              console.log(content);
+
+              let wordList = content.split(/\s/);
+
+              // Remove spaces from between words
+              let words = wordList.filter(function (element) {
+                return element != "";
+              });
+
+              // count words
+              word.textContent = words.length;
+            });
+          </script>
+<script>
+            $("input[type='radio']").change(function () {
+              if (($(this).val() == "OptionB") | ($(this).val() == "OptionA")) {
+                $("#area").show();
+              }
+            });
+          </script>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<input class="btn" id="answer-key-btn" name="answer_key" type="submit" value="Answer Key"/>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="QIPLIlsAS4Yjk5BqEUL1zR1ph2ZJi5qCFJfNtRbp3r3kybojyvIAk2YTvWmkkZlA"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 21 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">In recent years, the rise of digital technology has profoundly influenced educational methods, with e-books at the forefront of this shift. Linda Carter, a proponent of e-books, argues that they are not only environmentally friendly but also offer students instant access to a vast array of resources and interactive tools that enhance learning.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">However, not everyone is sold on the digital format. Mark Davis, a critic, points out that e-books require devices that may be expensive or inaccessible for low-income families, potentially widening the educational divide. There is also the concern that excessive screen time could have detrimental effects on students' eyesight and concentration.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Sophia Mitchell, another supporter of e-books, highlights the adaptability of digital texts, which can be updated easily to include the latest information, unlike traditional textbooks. She finds this feature especially valuable in subjects like science and technology, where information evolves rapidly. Additionally, e-books can support a variety of learning styles with features such as adjustable text size and embedded multimedia elements.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">On the other hand, some educators advocate for the tactile experience that physical books offer. They argue that physical books help students to better retain information, citing studies that suggest readers of print score better on comprehension tests than those who read digital texts. This viewpoint stresses the importance of a tangible connection with learning materials, which can foster deeper cognitive engagement.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">As educational institutions continue to navigate this debate, the choice between e-books and traditional books may come down to a balanced approach, considering both the technological benefits and the psychological and physical impacts on students. The challenge lies in integrating new technologies without losing the proven advantages of conventional methods.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. This article is about:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Linda Carter’s proposal to insert e-books in schools</option>
+<option value="Option2">Differing viewpoints on the use of e-books in education</option>
+<option value="Option3">The benefits of physical books in learning</option>
+<option value="Option4">New educational technologies, such as e-books</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. Mark Davis argues that e-books:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Enhance student engagement across all demographics</option>
+<option value="Option2">Complicate the learning process for everyone</option>
+<option value="Option3">Deviate from learning’s original purpose</option>
+<option value="Option4">May widen the educational divide</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. According to Sophia Mitchell, digital texts may help students by:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Enhancing engagement through multimedia</option>
+<option value="Option2">Facilitating global collaboration</option>
+<option value="Option3">Increasing their dependency on technology</option>
+<option value="Option4">Enabling real-time content modifications</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. Physical books may help, according to some educators, by:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Reducing production costs</option>
+<option value="Option2">Increasing digital literacy</option>
+<option value="Option3">Improving focus during reading</option>
+<option value="Option4">Expanding online access</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. A balanced approach might be necessary:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">To utilize benefits from both formats</option>
+<option value="Option2">As a cost-saving measure</option>
+<option value="Option3">To reduce technology use</option>
+<option value="Option4">Due to limited availability</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">As a parent, I'm caught in the middle of the e-book debate. While I appreciate the environmental benefits and the</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">Option convenience of updating content</option>
+<option value="Option2">cost-reduction of the project</option>
+<option value="Option3">fact the kids will carry less weight</option>
+<option value="Option4">socialization improvement</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">I worry about the cost of devices and the potential for</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">increasing student collaboration</option>
+<option value="Option2">increased screen time impacting my children’s health</option>
+<option value="Option3">enhanced interactivity and engagement</option>
+<option value="Option4">decreased textbook expenses</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. It’s troubling to think that e-books could</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">enhance personalized learning experiences</option>
+<option value="Option2">significantly reduce paper usage</option>
+<option value="Option3">widen the educational divide</option>
+<option value="Option4">simplify the teaching process</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">due to affordability issues. However, the</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">affordability and technology</option>
+<option value="Option2">adaptability and interactivity</option>
+<option value="Option3">complexity and difficulty</option>
+<option value="Option4">scarcity and exclusiveness</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">features of digital texts cannot be ignored, especially for subjects that constantly evolve. Ideally, schools should</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">focus solely on traditional textbooks</option>
+<option value="Option2">eliminate the use of e-books</option>
+<option value="Option3">offer both e-books and traditional books</option>
+<option value="Option4">introduce more advanced digital tools</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        books to cater to different learning preferences and ensure all students benefit regardless of their economic background.<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

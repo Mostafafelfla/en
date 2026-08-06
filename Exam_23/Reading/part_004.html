@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 9;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="OxvqAhYRt0t7vUt5dFEXyzvz6pZeKoqwDyVslNHGEny8J0gY7gBwjKs3kjmPMilu"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 19 - Reading Part 2: Reading to Apply a Diagram</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">9 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_005.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<img src="../../assets/asset_186.jpg"/>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Read the following email message about the diagram on the left.
+          Complete the email by filling in the blanks. Select the best choice
+          for each blank from the drop-down menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Subject: Contest Entry<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        To: Valley Bicycles &lt;valleybicycles@contestentry.ca&gt;<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        From: Mark Timmons &lt;mtimmons@email.com&gt;<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Dear Valley Bicycles,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">Please enter my name</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                1.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">for your bike contest</option>
+<option value="Option2">in the lottery draw</option>
+<option value="Option3">in your bike race</option>
+<option value="Option4">beside the photograph</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. As requested, I have attached a photo of</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                2.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">my family at the Rockies</option>
+<option value="Option2">my daughter's new bike</option>
+<option value="Option3">me climbing a mountain</option>
+<option value="Option4">me biking with a friend</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. I cycle to work daily on an old Conner bike. I bike all year round, except in heavy snow. I'm not that brave! If I win, I’d choose the mountain bike. With it, I would take a vacation biking through the mountains and along the coastal roads. I’m hoping the</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                3.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">new products</option>
+<option value="Option2">biking accessories</option>
+<option value="Option3">mountain bike</option>
+<option value="Option4">road bike</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">will include a bicycle tire pump, which would be very useful on such a trip. I really hope I win. I made a bet with my wife that, if I do, she has to come with me on the trip. She said she's not packing her bags any time soon! Could you tell me how the winners are chosen? Is it a random draw or will the best</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                4.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">new product idea</option>
+<option value="Option2">written response</option>
+<option value="Option3">bicycle review</option>
+<option value="Option4">photograph title</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">be chosen? Also, is it really necessary to</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                5.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">print my name</option>
+<option value="Option2">publish my email</option>
+<option value="Option3">share my phone number</option>
+<option value="Option4">give out my address</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         on your website if I win? I’m quite a private person.<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Best,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Mark Timmons<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">6. Why does Mark describe his biking experiences?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">to explain why he deserves a new bike</option>
+<option value="Option2">to enter for a discount on the bike</option>
+<option value="Option3">to fulfill the contest requirements</option>
+<option value="Option4">to describe the photo he sent in</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">7. Why does Mark want to win?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">to get a bike for his trip</option>
+<option value="Option2">to pay for his bike trip</option>
+<option value="Option3">to start biking to work</option>
+<option value="Option4">to get his wife a bike</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">8. How would Mark’s wife likely feel about his application?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">He will definitely win.</option>
+<option value="Option2">His picture is unsuitable.</option>
+<option value="Option3">He’s the best contestant.</option>
+<option value="Option4">He’s unlikely to win.</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

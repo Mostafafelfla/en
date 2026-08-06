@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<script>
+    var timeLimitInMinutes = 11;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="b2zejbop6Xbr1HshJdW2dQ045NrDn5Q103Zg4H7ehkgsfNfaDOTBY1XyjHOepZLZ"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 01 - Reading Part 1: Reading Correspondence</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">11 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dear Maggie and Alex,</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">I saw the news about the terrible storm and flood that hit Spiritwood last week. I was relieved when I received an email from you. It was good to learn that you are both okay but unfortunate to hear that your house was damaged. Still, you were lucky that there were only some broken windows and a little flooding in a few rooms. We realize that many people were less fortunate. The news programs showed pictures of all the horrible destruction that the wind and heavy rains caused—the tragic loss of lives and homes, and the flooding of farmland.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Our hearts go out to the flood victims and, as you had requested, Peter and I have put together some relief packages for those who lost their homes and belongings in the storm. With the help of our neighbors, we have collected some basic supplies, blankets, clothing, canned food, and bottled water. A friend of ours, travelling in the direction of Spiritwood in a few days, has offered to drop off the packages. We are now discussing how we could organize a larger food and clothing drive and get the entire town of Gladstone involved. I’ll be meeting with the mayor, Sarah Stanley, as soon as possible to discuss how to organize the relief effort.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Because of the doctor shortage in Gladstone, Peter and I have been working really long hours at the clinic lately. Otherwise, we could have provided our medical expertise to the flood victims. Still, our younger son James has volunteered with a group that will help clean up the flooded area. James is finishing his last semester of university next week, so he’ll be flying out right after his classes end on Friday.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Please keep us informed of the evolving situation in Spiritwood. If there is anything you need, don’t hesitate to ask. Since we all met in medical school, you have both been like family to Peter and I. We have a guest room that you are more than welcome to stay in for as long as you need to.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Our thoughts are with you both, as well as with all the people in the flood-devastated area.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Arlene</p>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            1. What is Arlene's job?
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">a relief worker</option>
+<option value="Option2">a volunteer</option>
+<option value="Option3">a doctor</option>
+<option value="Option4">a government officer</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            2. Arlene is
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">asking the mayor of Spiritwood for help.</option>
+<option value="Option2">renting her guest room to families in need.</option>
+<option value="Option3">getting help from her community.</option>
+<option value="Option4">training as an environmental clean-up expert.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            3. Maggie and Alex’s house
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">received some minor damage.</option>
+<option value="Option2">suffered damage to the guest room.</option>
+<option value="Option3">was very badly damaged.</option>
+<option value="Option4">was less damaged than their farm.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            4. Arlene is
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">planning to visit Maggie and Alex.</option>
+<option value="Option2">concerned about Maggie and Alex's health.</option>
+<option value="Option3">sending useful goods to Spiritwood.</option>
+<option value="Option4">worried about James’ well-being.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            5. Arlene is writing to
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">offer financial help to her friends.</option>
+<option value="Option2">offer her sympathy and support.</option>
+<option value="Option3">request assistance in her medical clinic.</option>
+<option value="Option4">request donations for affected families.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="
+              display: inline-block;
+              font-size: min(2vw, 16px);
+              font-weight: 700;
+            ">
+            6. Arlene and Peter’s son will
+          </div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">cut short his studies to help.</option>
+<option value="Option2">deliver medical supplies.</option>
+<option value="Option3">organize aid in Gladstone.</option>
+<option value="Option4">travel to Spiritwood.</option>
+</select>
+</div>
+</div>
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Here is a response to the message. Complete the response by filling in
+          the blanks. Select the best choice for each blank from the drop-down
+          menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Hi Arlene,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">Thank you so much for your offer of</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">building supplies</option>
+<option value="Option2">medical supplies</option>
+<option value="Option3">plane tickets to Gladstone</option>
+<option value="Option4">a place to stay</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">. At the moment, though, I think we are okay. The government has been a tremendous help, having flown in food, supplies, and temporary shelters. Fortunately, we have been able to</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">rebuild our house</option>
+<option value="Option2">stay in our own home</option>
+<option value="Option3">repair the roof</option>
+<option value="Option4">clear the broken trees</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">However, all of the roads in and out of town continue to be blocked, so, hopefully, the</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">army personnel</option>
+<option value="Option2">mayor</option>
+<option value="Option3">medical team</option>
+<option value="Option4">relief packages</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline"> will still be able to make it through somehow. Considering the state of things here, I am lucky to even have a way to contact you. Amazingly, despite the disruption of many communication services,</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">our radio</option>
+<option value="Option2">the internet</option>
+<option value="Option3">the phone service</option>
+<option value="Option4">the postal service</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">is still working.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px);
+              font-weight: 700; display: inline">Anyways, please tell James his</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            11.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">clothing donations are</option>
+<option value="Option2">medical supplies are</option>
+<option value="Option3">team of volunteers is</option>
+<option value="Option4">university friends are</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         most welcome. We need all the help we can get tackling this mess.  
+            
+        <!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Maggie  
+            <!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

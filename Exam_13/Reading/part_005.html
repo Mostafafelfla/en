@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 10;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="gXaZ8mTNJ917LpmjFGwOWJVJwZPfCbgz5YA1TSCCUw68Zv9czhtnHUSdKTcQE5bx"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 09 - Reading Part 3: Reading for Information</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">10 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_006.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div class="instruction"><p>Read the following passage.</p></div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A. The first record of chewing gum dates back to Finland about 5,000 years ago. Neolithic-period chewing gum was made of bark tar and was widely utilized for its antiseptic and medicinal properties. In America, chewing gum was first introduced to settlers by the American Indians who chewed resin made from the sap of spruce trees. After World War II chewing gum was made of a latex sap substance called chicle, which has been steadily engineered and replaced by synthetic rubbers and artificial sweeteners that allow for greater flavouring, colouring, and texture. Modern chewing gum hardly resembles its predecessors in appearance and flavour. It has also gained unprecedented popularity, becoming a 20-billion-dollar industry in North America.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">B. Over the past decades, the bad reputation chewing gum earned for causing cavities and gum disease has also begun to dwindle. With the advent of sugarless chewing gum, most dentists today deem chewing gum in moderation to be harmless, or even potentially beneficial to oral hygiene. In addition, functional chewing gum, a special category of gum that imparts a practical function in addition to, or as a replacement for, the usual enjoyment provided by a confectionery gum, has become increasingly prescribed by dentists and doctors alike. Conditions such as bad breath and tobacco addictions are now commonly treated with functional gum. Surgeons also prescribe functional chewing gum for patients recovering from gastrointestinal surgeries.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">C. Recent research suggests the benefits of gum may not be limited to medicated gum. Chewing regular gum has been found to boost cognitive performance in many ways including improved reaction time, motor control, and alertness. These effects have been found to come at an expense, however. Although as many as eight areas of the brain are activated by the simple act of chewing gum, the cognitive gains of mastication-induced arousal can only be sustained for a short period. Moreover, chewing gum was observed to interfere with verbal-fluency and short-memory tasks.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">D. Oral health researchers posit the short-lived cognitive gains of chewing gum pale in comparison to their potentially hazardous health effects. They claim the innocuousness of sugarless gum is a myth, expounding that sugar substitutes such as aspartame have been increasingly linked to different types of cancer and autoimmune diseases. They also point to possible chronic irreversible conditions that may ensue from excessive gum chewing such as headaches, tightness in jaw muscles and nerves, metabolic imbalances, and irregularities in mastication that range from tooth decay to bone loss.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">E. Not given in any of the above paragraphs.</p>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<div class="instruction">
+<p>
+            Decide which paragraph, A to D, has the information given in each
+            statement below. Select E if the information is not given in any of
+            the paragraphs.
+          </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 2em;
+          ">
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -1. Evidence suggests gum chewing can enhance some brain functions.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -2. The chemical bases of chewing gum have been reformulated.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -3. Chewing gum is used post-operatively as a healing aid.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -4. There can be lifelong damage associated with regular intake of synthetic sugars.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -5. Chewing gum can curb some unhealthy dependence behaviours.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -6. Some researchers oppose the reported benefits of chewing gum.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -7. Patients who chew gum regularly tend to be more neglectful of their oral hygiene.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -8. Early chewing gum was entirely natural.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -9. The benefits of sugar-free gum are recognized.
+            </div>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

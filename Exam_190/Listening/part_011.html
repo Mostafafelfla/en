@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | </title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<title>CelpipExpress | Listening Test</title>
+<script>
+    var time_limit = 30;
+    var time_out = setInterval(() => {
+      if (time_limit == 0) {
+        $("#timer").html("Time Over");
+      } else {
+        if (time_limit < 10) {
+          time_limit = 0 + "" + time_limit;
+        }
+        $("#timer").html(time_limit + " seconds");
+        time_limit -= 1;
+      }
+    }, 1000);
+  </script>
+</head>
+<form autocomplete="off" class="form" id="form" method="POST">
+<input name="csrfmiddlewaretoken" type="hidden" value="0Q9eQJYaUchsGig0MtFPgGPtE5m6CQEFPRzgBfHZ5zmtUo3TG4Co1RMXSZJHEKzD"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 25 - Listening Task 1: Listening to Problem Solving</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">30 seconds</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_012.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div style="margin-top: 50px">
+<div class="instruction">
+<p>
+            Listen to the question. You will hear it only
+            <span>once</span>.
+          </p>
+<p></p>
+</div>
+<br/>
+<div class="container-audio align-center">
+<audio autoplay="" controls="">
+<source id="playAudio" src="media_1574_0.mp3" type="audio/mp3"/>
+</audio>
+</div>
+<h6 class="align-center">
+          This playbar will not appear in the official test.
+        </h6>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<p class="text-danger" style="font-size: min(1.2vw, 14px); font-weight: bold">
+          Question 4 of 8
+        </p>
+</div>
+<div class="instruction">
+<p>Choose the best answer to each question.</p>
+</div>
+<div>
+<div class="radio-option">
+<input id="She waited too long to clean it." name="ans" style="display: inline-block" type="radio" value="Option1"/>
+<label for="She waited too long to clean it." style="display: inline-block">
+<p>She waited too long to clean it.</p>
+</label>
+</div>
+<div class="radio-option">
+<input id="She used too much water." name="ans" style="display: inline-block" type="radio" value="Option2"/>
+<label for="She used too much water." style="display: inline-block">
+<p>She used too much water.</p>
+</label>
+</div>
+<div class="radio-option">
+<input id="She rubbed the stain instead of trying to clean it gently." name="ans" style="display: inline-block" type="radio" value="Option3"/>
+<label for="She rubbed the stain instead of trying to clean it gently." style="display: inline-block">
+<p>She rubbed the stain instead of trying to clean it gently.</p>
+</label>
+</div>
+<div class="radio-option">
+<input id="She used the wrong cleaning product." name="ans" style="display: inline-block" type="radio" value="Option4"/>
+<label for="She used the wrong cleaning product." style="display: inline-block">
+<p>She used the wrong cleaning product.</p>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

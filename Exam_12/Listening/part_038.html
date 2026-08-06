@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | </title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<title>CelpipExpress | Listening Test</title>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 4;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        if(minutes >= 1){
+          $('#timer').html(minutes + ' minutes');
+        }else{
+          $('#timer').html(seconds + ' seconds');
+        }
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_16.js"></script>
+</head>
+<form autocomplete="off" class="form" method="POST">
+<input name="csrfmiddlewaretoken" type="hidden" value="L5f6W9jRZUS5McKJwT64X1LlUW32vr82A6F8HF2GahX60ixCqu3DIcIP8QqDxl30"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 08 - Listening Part 5: Listening to a Discussion</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">4 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_039.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div style="width: inherit; height: inherit">
+<div class="instruction">
+<p>
+          Choose the best way to complete each statement from the drop-down menu
+          ( ▾ ).
+        </p>
+</div>
+<div style="font-size: min(2vw, 16px); font-weight: 700">
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">1. What is the purpose of the meeting?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">to make a training decision</option>
+<option value="Option2">to discuss staff performance</option>
+<option value="Option3">to re-evaluate staff roles</option>
+<option value="Option4">to compare training formats</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">2. What will the training seminar cover?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">how to effectively teach your colleagues</option>
+<option value="Option2">how to use new accounting software</option>
+<option value="Option3">how to write good business policies</option>
+<option value="Option4">how to describe complicated procedures</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">3. Why does Benjamin suggest Diane?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">She is available on weekends.</option>
+<option value="Option2">She has been there the longest.</option>
+<option value="Option3">She deserves a trip to Vancouver.</option>
+<option value="Option4">She needs to learn about accounting</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">4. What does Ian think about Diane?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">She is being dishonest about her overtime.</option>
+<option value="Option2">She does not require more compensation now.</option>
+<option value="Option3">She is lacking in teaching and accounting skills.</option>
+<option value="Option4">She will not want to work on another weekend.</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">5. Why does Ian think Beth is a good teacher?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">She has given in-house seminars.</option>
+<option value="Option2">People have told him she is a good teacher.</option>
+<option value="Option3">She has a degree in education.</option>
+<option value="Option4">Ian has always found Beth's instructions helpful.</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">6. What does Jennifer likely believe?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">People can change their work habits easily.</option>
+<option value="Option2">People shouldn’t complain as much as they do.</option>
+<option value="Option3">People can learn to explain things more clearly.</option>
+<option value="Option4">People shouldn’t believe everything they hear</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">7. What do they agree to do?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">delay making a final decision</option>
+<option value="Option2">speak to all three candidates</option>
+<option value="Option3">review the candidates’ education</option>
+<option value="Option4">consult the procedures manual</option>
+</select>
+</div>
+</div>
+<div style="display: block; padding: 5px">
+<div style="display: inline-block">8. What is true of the training seminar in Vancouver?</div>
+<div style="display: inline-block">
+<select name="dropdown">
+<option selected="selected" value="None"></option>
+<option value="Option1">It will be held at Head Office.</option>
+<option value="Option2">They need to register for it tomorrow.</option>
+<option value="Option3">It is at least 2 weeks away.</option>
+<option value="Option4">They need to read materials beforehand.</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

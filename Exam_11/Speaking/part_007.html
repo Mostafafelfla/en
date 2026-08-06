@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Speaking Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<title>CelpipExpress | Speaking Test</title>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInSeconds = 60
+    var time_out = setInterval(() => {
+      timeLimitInSeconds--;
+      var minutesPreparation = Math.floor(timeLimitInSeconds / 60);
+      var secondsPreparation = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds <= 0) {
+        $('#preparationTimer').hide();
+        $("#next-btn").click()
+      } else {
+        if (minutesPreparation < 10) {
+          minutesPreparation = '0' + minutesPreparation;
+        }
+        if (secondsPreparation < 10) {
+          secondsPreparation = '0' + secondsPreparation;
+        }
+        $('#preparationTimer').html(secondsPreparation);
+      }
+    }, 1000);
+  </script>
+</head>
+<form autocomplete="off" class="form" method="POST">
+<input name="csrfmiddlewaretoken" type="hidden" value="QIctlcmfXTMMtbY7oQKOQzK2E6NPEA0CFJCv6I548gRNHhL0irHnBKHwS0aqGuVA"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 07 - Speaking Task 5: Comparing and Persuading</p>
+</div>
+<div>
+<p style="font-size: min(2vw, 16px); margin: 3px; display: inline-block">
+          Preparation:
+          <b>60 seconds</b> Recording:
+          <b>60 seconds</b>
+</p>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_008.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent-column">
+<div class="instruction">
+<p>The children's club you volunteer at is planning a field trip for the children aged 8 to 10, and you must help choose where they will go. You find two suitable options. Using the pictures and information below, choose the option that you prefer. In the next section, you will need to persuade another parent of the club that your choice is the better choice.</p>
+</div>
+<div style="padding-left: 25px">
+<p>
+<b>If you do not choose an option, the computer will choose one for you.
+          You do not need to speak for this part.</b>
+</p>
+</div>
+<div class="speaking-flex-row">
+<div class="speaking-option">
+<label id="label_option1">
+<input name="option" onclick="replaceid1('selected')" style="display: none" type="radio" value="option1"/>
+<div id="label_content">
+<img id="speakingImg1" src="../../assets/asset_80.png"/>
+<div class="txt_img">
+<div>
+<p class="img_txt" style="
+                    font-size: min(2vw, 16px);
+                    font-weight: 700;
+                    text-align: left;
+                  ">
+<b class="img_txt">Children's Farm</b>
+</p>
+<p></p>
+<p class="img_txt" style="
+                    font-size: min(2vw, 16px);
+                    font-weight: 700;
+                    display: block;
+                    text-align: left;
+                  ">
+                  - $10 per person
+                </p>
+<p class="img_txt" style="
+                    font-size: min(2vw, 16px);
+                    font-weight: 700;
+                    display: block;
+                    text-align: left;
+                  ">
+                  - feed the chickens
+                </p>
+<p class="img_txt" style="
+                    font-size: min(2vw, 16px);
+                    font-weight: 700;
+                    display: block;
+                    text-align: left;
+                  ">
+                  - watch the cows being milked
+                </p>
+</div>
+</div>
+</div>
+</label>
+</div>
+<div class="speaking-option">
+<label id="label_option2">
+<input name="option" onclick="replaceid2('selected')" style="display: none" type="radio" value="option2"/>
+<div>
+<img id="speakingImg2" src="../../assets/asset_82.png"/>
+</div>
+<div class="txt_img">
+<div>
+<p class="img_txt" style="
+                  font-size: min(2vw, 16px);
+                  font-weight: 700;
+                  text-align: left;
+                ">
+<b class="img_txt">Ice skating</b>
+</p>
+<p></p>
+<p class="img_txt" style="
+                  font-size: min(2vw, 16px);
+                  font-weight: 700;
+                  display: block;
+                  text-align: left;
+                ">
+                - $13 per person including skate rental
+              </p>
+<p class="img_txt" style="
+                  font-size: min(2vw, 16px);
+                  font-weight: 700;
+                  display: block;
+                  text-align: left;
+                ">
+                - great exercise for all ages
+              </p>
+<p class="img_txt" style="
+                  font-size: min(2vw, 16px);
+                  font-weight: 700;
+                  display: block;
+                  text-align: left;
+                ">
+                - hockey sticks and pucks available
+              </p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<div>
+<div class="timer align-center">
+<div class="box" id="startPrepTime">
+<div class="boxText">
+<p id="preparation-header">Preparation Time:</p>
+<div id="countdown">
+<b><span id="preparationTimer" style="color: #0056bf">60</span></b>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<input class="btn" id="answer-key-btn" name="answer_key" type="submit" value="Answer Key"/>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script>
+  function replaceid1(class_value) {
+    $("#label_option1").attr("class", class_value);
+    $("#label_option2").attr("class", "");
+  }
+  function replaceid2(class_value) {
+    $("#label_option1").attr("class", "");
+    $("#label_option2").attr("class", class_value);
+  }
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

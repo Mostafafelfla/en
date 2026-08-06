@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 9;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="hBEJQu6gQGG6RtiwjM90AsRPATnFREGb6C4LB0P513L75z5pdn6zlDOjONKgTyB9"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 06 - Reading Part 2: Reading to Apply a Diagram</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">9 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_005.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<img src="../../assets/asset_68.jpg"/>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Read the following email message about the diagram on the left.
+          Complete the email by filling in the blanks. Select the best choice
+          for each blank from the drop-down menu (▾).
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Subject: Language Courses<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        To: Charlie Veui &lt;cveui@tmscollg.com&gt;<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        From: Gerry Nalen &lt;Grnal@tmscollg.com&gt;<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Hi Charlie,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">Remember how we always wanted to learn another language? Well, today I picked up a brochure for the language school down the street from our place. Let’s take a course and travel at the end of the semester! The courses offered are all for learners with</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                1.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">little experience</option>
+<option value="Option2">intermediate abilities</option>
+<option value="Option3">strong speaking skills</option>
+<option value="Option4">cultural knowledge</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. The French course</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                2.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">seems more demanding</option>
+<option value="Option2">has larger class sizes</option>
+<option value="Option3">focuses on more skills</option>
+<option value="Option4">requires less time</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">than the others, but they promise that our language will get better fast. Or perhaps you’d prefer German? You’ve always wanted to see Germany, and this course</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                3.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">is the most intensive option</option>
+<option value="Option2">includes cultural activities</option>
+<option value="Option3">has the most frequent classes</option>
+<option value="Option4">teaches functional language</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. According to the brochure,</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                4.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">it has the smallest classes</option>
+<option value="Option2">many people like it</option>
+<option value="Option3">it requires a lot of study</option>
+<option value="Option4">enrollment is quite low</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">. Or we could think about future job opportunities and take American Sign Language. If we took it in the evening, it wouldn’t affect our summer jobs. But when the fall semester starts,</p>
+<!-- prettier-ignore -->
+<div style="font-size: min(2vw, 16px); font-weight: 700; display: inline-block">
+<p style="font-size: min(2vw, 16px);font-weight: 700; display: inline">
+                5.
+                <select aria-label="Default select example" class="form-select" id="dropdown1" name="dropdown1">
+<option selected="selected" value="None"></option>
+<option value="Option1">there are only morning classes</option>
+<option value="Option2">it may be too much work</option>
+<option value="Option3">the course will be finished</option>
+<option value="Option4">there is a final assessment</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        . On second thought, I’d rather take something useful for traveling. Oh, I just noticed that the brochure doesn’t mention the price of the courses. I’ll call them.<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Talk soon,<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        Gerry<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+<br/>
+<div class="instruction">
+<p>
+          Using the drop-down menu (▾), choose the best option according to the
+          information given in the message.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">6. What is Gerry’s relationship to Charlie?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">roommate</option>
+<option value="Option2">employee</option>
+<option value="Option3">teacher</option>
+<option value="Option4">counselor</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">7. What are Gerry and Charlie doing in September?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">getting part-time jobs</option>
+<option value="Option2">returning to school</option>
+<option value="Option3">traveling to visit a friend</option>
+<option value="Option4">taking a trip to Europe</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">8. Why does Gerry want to learn a language?</div>
+<div style="display: inline-block">
+<select name="dropdown2">
+<option value="None"></option>
+<option value="Option1">to get a university credit</option>
+<option value="Option2">to get a job promotion</option>
+<option value="Option3">to prepare for a trip abroad</option>
+<option value="Option4">to talk to his German friends</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

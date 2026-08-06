@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Dashboard</title>
+<link href="assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="assets/asset_3.js"></script>
+<script src="assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="assets/asset_6.bin"></script>
+<link href="assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script></script>
+<script>
+    var listeningData = [
+      
+          {'clb': 'M', 'date': 'Aug. 6, 2026, 12:04 a.m.', 'index': '68', 'url': '/student/listening/listening-answers/810', 'result': 4 },
+      
+          {'clb': '3', 'date': 'Aug. 5, 2026, 4:23 p.m.', 'index': '20', 'url': '/student/listening/listening-answers/141', 'result': 8 },
+      
+          {'clb': '3', 'date': 'Aug. 5, 2026, 3:31 p.m.', 'index': '14', 'url': '/student/listening/listening-answers/86', 'result': 8 },
+      
+          {'clb': '3', 'date': 'Aug. 5, 2026, 1:28 p.m.', 'index': '10', 'url': '/student/listening/listening-answers/361', 'result': 8 },
+      
+          {'clb': '3', 'date': 'Aug. 4, 2026, 9:47 p.m.', 'index': '8', 'url': '/student/listening/listening-answers/217', 'result': 8 }
+      
+    ];
+    var readingData = [
+      
+          {'clb': 'M', 'date': 'Aug. 6, 2026, 12:04 a.m.', 'index': '69', 'url': '/student/reading/reading-answers/810', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 6, 2026, 12:04 a.m.', 'index': '68', 'url': '/student/reading/reading-answers/810', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 4:23 p.m.', 'index': '21', 'url': '/student/reading/reading-answers/141', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 4:23 p.m.', 'index': '20', 'url': '/student/reading/reading-answers/141', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 3:34 p.m.', 'index': '15', 'url': '/student/reading/reading-answers/86', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 3:31 p.m.', 'index': '14', 'url': '/student/reading/reading-answers/86', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 1:28 p.m.', 'index': '11', 'url': '/student/reading/reading-answers/361', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 5, 2026, 1:28 p.m.', 'index': '10', 'url': '/student/reading/reading-answers/361', 'result': 5 },
+      
+          {'clb': 'M', 'date': 'Aug. 4, 2026, 9:48 p.m.', 'index': '9', 'url': '/student/reading/reading-answers/217', 'result': 6 },
+      
+          {'clb': 'M', 'date': 'Aug. 4, 2026, 9:47 p.m.', 'index': '8', 'url': '/student/reading/reading-answers/217', 'result': 6 }
+      
+    ];
+
+    console.log(readingData)
+
+    // Example of using dataPoints in a chart
+    document.addEventListener("DOMContentLoaded", (event) => {
+      var canvas = document.querySelector("canvas");
+      fitToContainer(canvas);
+
+      function fitToContainer(canvas) {
+        // Make it visually fill the positioned parent
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        // ...then set the internal size to match
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+
+
+      const ctx = document.getElementById("myChart").getContext("2d");
+      const chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: "line",
+        // The data for our dataset
+        data: {
+          datasets: [
+            {
+              label: "Listening",
+              backgroundColor: "rgba(57, 62, 70, 0.2)",
+              borderColor: "rgba(57, 62, 70, 1)",
+              data: listeningData.map(item => ({ x: item.index, y: item.result, date: item.date, url: item.url, clb: item.clb })),
+              parsing: {
+                xAxisKey: "x",
+                yAxisKey: "y",
+              },
+              pointRadius: 5,
+              hitRadius: 10,
+              hoverRadius: 7,
+              borderWidth: 2,
+              fill: false,
+              tension: 0.4 // Increase this value for smoother curves
+            },
+            {
+              label: "Reading",
+              backgroundColor: "rgba(199, 35, 35, 0.2)",
+              borderColor: "rgba(199, 35, 35, 1)",
+              data: readingData.map(item => ({ x: item.index, y: item.result, date: item.date, url: item.url, clb: item.clb })),
+              parsing: {
+                xAxisKey: "x",
+                yAxisKey: "y",
+              },
+              pointRadius: 5,
+              hitRadius: 10,
+              hoverRadius: 7,
+              borderWidth: 2,
+              fill: false,
+              tension: 0.4 // Increase this value for smoother curves
+            },
+          ],
+        },
+         // Configuration options go here
+        options: {
+          onClick: function(evt, elements) {
+            if (elements.length > 0) {
+              const datasetIndex = elements[0].datasetIndex;
+              const index = elements[0].index;
+              const url = chart.data.datasets[datasetIndex].data[index].url;
+              console.log(url)
+              if (url) {
+                  window.location.href = url;
+              }
+            }
+          },
+          title: {
+              display: true,
+              text: 'Score Tracker',
+              font: {
+                  size: 18,
+                  weight: 'bold'
+              },
+              color: 'rgba(57, 62, 70, 1)'
+          },
+          scales: {
+            x: {
+              type: 'linear', // Use linear for evenly spaced data
+              position: 'bottom',
+              display: false,
+              title: {
+                  display: false,
+                  text: 'Index'
+              },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Result'
+                }
+            }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                title: function() {
+                  return ''; // Hides the title which is the index by default
+                },
+                label: function(tooltipItem) {
+                  const date = tooltipItem.raw.date;
+                  const result = tooltipItem.raw.y;
+                  const clb = tooltipItem.raw.clb;
+                  return `Date: ${date}, Result: ${result}, CLB: ${clb}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<div class="row" id="rowHeader">
+<div class="d-flex justify-content-between align-items-center" id="panelTop">
+<p>Welcome to the ExpressPrep Celpip Test, <b>z</b></p>
+<a class="btn btn-primary" href="choose-exam.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a>
+</div>
+</div>
+<div id="panelBackGround">
+<div id="chartContainer">
+<canvas id="myChart"></canvas>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="assets/asset_7.js"></script>
+<script src="assets/asset_10.js"></script>
+<script src="assets/asset_11.js"></script>
+<script src="assets/asset_12.js"></script>
+<script src="assets/offline_logic.js"></script></body>
+</html>

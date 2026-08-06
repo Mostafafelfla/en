@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Writing Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 27;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = '0' + minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + ':' + seconds);
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="aWbYcJrKCMOpQSSmkAF2pDZRhmu5KmEJZXB0XfazN9Tq4YFfebCBaOWlvgRGMgzH"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 10 - Writing Task 1: Writing an Email</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">27:00</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_004.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-5" id="left">
+<div class="instruction">
+<p>Read the following information.</p>
+</div>
+<div>
+<p id="texts">You enjoy going to your local coffee shop to work, read, and meet friends. However, every time you go, the seats and tables are dirty and you have to clean them up.</p>
+</div>
+</div>
+<div class="col-md-7" id="right">
+<div>
+<div class="instruction">
+<p>Write an email to the coffee shop manager in about 150-200 words. Your email should do the following things:</p>
+</div>
+<div style="margin-left: 25px">
+<div style="margin: 0 0 15px 0">
+<li id="instructionItem">Describe why you enjoy going to the coffee shop.</li>
+<li id="instructionItem">Explain the problems with the coffee shop.</li>
+<li id="instructionItem">Suggest how the problems could be solved.</li>
+</div>
+<p class="result" style="font-size: min(1.6vw, 14px); font-weight: 700">
+            Word Count: <span id="word">0</span>
+</p>
+</div>
+<div class="question-container">
+<textarea id="area" name="answer"></textarea>
+<script>
+            let area = document.getElementById("area");
+            let char = document.getElementById("char");
+            let word = document.getElementById("word");
+
+            area.addEventListener("input", function () {
+              // count characters
+              let content = this.value;
+
+              // remove empty spaces from start and end
+              content.trim();
+              console.log(content);
+
+              let wordList = content.split(/\s/);
+
+              // Remove spaces from between words
+              let words = wordList.filter(function (element) {
+                return element != "";
+              });
+
+              // count words
+              word.textContent = words.length;
+            });
+          </script>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<input class="btn" id="answer-key-btn" name="answer_key" type="submit" value="Answer Key"/>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

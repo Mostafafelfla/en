@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 10;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="h0SArfyyspQ9LnL8mgskfCDcOmPCSntf61iCcLhnDMVaZty1gRpT0NAG2gcdUhod"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 08 - Reading Part 3: Reading for Information</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">10 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_006.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div class="instruction"><p>Read the following passage.</p></div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A. Have you ever run a marathon? According to recent statistics, marathons are becoming increasingly popular. In fact, the number of people in North America who have run the traditional marathon distance of 42.2 km (or 26.6 miles) has increased twentyfold over the last 40 years. In recent years, almost half the runners have been women. A staggering 746 different marathons were scheduled across North America in 2014. One of the most popular, the Boston Marathon, had more than 35,000 official runners in 2014, of which more than 31,000 finished the race. However, running a marathon is not a simple feat.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">B. Training for a marathon demands a great deal of time and dedication. On average, trainees need to dedicate 5 days a week to running, with one of these days devoted to a long run. The long run can range anywhere from 16 km at the start of a training program to 32 km in later weeks. It is typical for a person to run up to 80 km in a single week while training. During training, runners need to pay strict attention to their diet and include high-quality foods such as whole grains, lean meats, vegetables, and fruits.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">C. Even though training for a marathon is rigorous and requires firm commitment, many people are enjoying the experience. One reason for this is that, increasingly, running is viewed as a way to become physically fit and maintain a healthy lifestyle. Runners who regularly train for marathons can experience health benefits such as an increased metabolism and strengthened heart and lungs. Another reason is that running is inexpensive and can be done just about anywhere; all you need to do is put on a pair of sneakers and step outside. Some people also report experiencing a runner’s high which has been defined as a feeling of extreme euphoria or happiness.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">D. Some experts believe that running a marathon is too extreme to be healthy. The reason why a marathon is 42.2 km is because a man in ancient Greece ran the distance from Marathon to Athens to share the news of a victory. Apparently, he died immediately after making his announcement. Even now, several people die each year after running a marathon. Serious health risks can include dehydration or water intoxication. Scientists believe, however, that the reasons are not always related to running. Some deaths, for example, are attributable to pre-existing heart conditions. Marathon runners need to be fully involved in designing their own healthy training program.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">E. Not given in any of the above paragraphs.</p>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<div class="instruction">
+<p>
+            Decide which paragraph, A to D, has the information given in each
+            statement below. Select E if the information is not given in any of
+            the paragraphs.
+          </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 2em;
+          ">
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -1. Following a rigorous routine is essential to running a successful marathon
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -2. Numerous factors make running an attractive pastime.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -3. A historical event determined the length of a marathon.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -4. Marathon running may increase the risk of heart disease.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -5. Despite the challenges it presents, marathon running is attracting more interest.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -6. Running a marathon can trigger intense emotion.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -7. The number of men running in marathons has decreased.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -8. There is a good gender balance among marathon participants.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -9. The physical demands of running a marathon can result in unfortunate consequences.
+            </div>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

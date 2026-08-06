@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 10;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="UbHDUqVdnqsT9OQlZQFAFWczA0i8MKlXJc7FFWE2yNxUnUDeTrC9q793OUFJOEgV"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 06 - Reading Part 3: Reading for Information</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">10 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="part_006.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div class="instruction"><p>Read the following passage.</p></div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">A. On May 8, 1987, Canada introduced the one-dollar coin now known as the “loonie.” It is eleven-sided and gold-coloured (it’s actually bronze-plated nickel). The coin features a design by Ontario wildlife artist Robert Ralph Carmichael—a loon on one side and Queen Elizabeth II on the other. Canada is, after all, still a member of the British Commonwealth. The loon is a water bird common across Canada, known for its ability to swim great distances under water and for its beautiful, haunting call.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">B. The loonie wasn’t Canada’s first one-dollar coin. A silver dollar was introduced in 1935, featuring an image of two voyageurs paddling a canoe on one side and, to display Canada's British connections, an image of Britain's King George on the other. But the silver dollar—which was made of nickel by 1967—wasn’t used much because of its size and weight (about 23 grams). What was in common use was a green-and-white paper bill. However, the paper bills wore out within a year, which is why the loonie was introduced. It was expected to last twenty years, saving taxpayers $175–250 million.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">C. In fact, the Royal Canadian Mint intended to use the same voyageur design for the new coin, but the master dies were lost somewhere between Ottawa and the Winnipeg production facility. The dies were entrusted to a courier service instead of to a high-security service. Worse, apparently no one asked the courier representative who showed up to take possession of the dies for identification. Worse still, designs for both sides of the coin went in the same package instead of in separate packages. For these reasons, the Mint suspected foul play and, fearing counterfeits, decided to go with a new design, that by Carmichael. An investigation by the Royal Canadian Mounted Police concluded, however, that the dies were simply lost in transit.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">D. In 1996, the orange-brown two-dollar paper bill was also replaced with a coin. Called a “toonie,” the silver coin has a gold center (actually nickel and bronze) featuring another Canadian animal, a polar bear on an ice floe. Already light, at 7.3 grams, a lighter version was introduced in 2012 by replacing the nickel with steel. A lighter version of the loonie was also introduced. Unfortunately, the lighter coins didn’t work in coin-operated machines, such as vending machines, parking meters, and washers and dryers in laundromats. As a result, many business owners have had to pay thousands of dollars to replace and upgrade their equipment.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">E. Not given in any of the above paragraphs.</p>
+</div>
+<div class="col-md-6" id="right">
+<div>
+<div class="instruction">
+<p>
+            Decide which paragraph, A to D, has the information given in each
+            statement below. Select E if the information is not given in any of
+            the paragraphs.
+          </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 2em;
+          ">
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -1. Government officials were afraid that someone would make unauthorized coins.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -2. By the end of the 20th century, coins replaced two paper bills in Canada.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -3. Replacing paper bills every year was expensive.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -4. People preferred to carry the lighter silver dollar.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -5. The animal depicted on a loonie is found throughout Canada.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -6. The individual who picked up the dies had forgotten to bring identification.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -7. Shopkeepers were unhappy to have paper bills replaced with coins
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -8. Canada's connection to Britain is depicted on one side of the loonie.
+            </div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">
+<select id="dropdown" name="dropdown">
+<option value="None"></option>
+<option value="Option1">A</option>
+<option value="Option2">B</option>
+<option value="Option3">C</option>
+<option value="Option4">D</option>
+<option value="Option5">E</option>
+</select>
+              -9. A change in raw materials reduced the weight of the coins.
+            </div>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

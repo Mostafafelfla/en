@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="FAM2YmYyoKKmrJjHEXrDJ4kYh1mTDQYfuBc4JSHnz7PnFP6AyyocufhsvVJuFKTd"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 25 - Reading Task 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">AI is making strides in healthcare, with technologies that improve diagnoses, personalize treatments, and streamline operations. While success stories demonstrate AI's potential, experts have differing views on how to overcome barriers to its full adoption.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">One successful AI system is CareRemind, which reduces missed hospital appointments—a major issue for healthcare systems. By identifying patients at high risk of missing appointments and sending them tailored reminders, CareRemind helps save time and money, while improving health outcomes. Missed appointments cost healthcare systems billions each year, often due to social barriers, not only due to lack of patient adherence to medical recommendations. According to Dr. Emily Johnson, a social health expert, missed appointments are not just about patient negligence, but are often the result of social barriers such as lack of childcare, or transportation.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Dr. Liam Thompson, Medical Director at ClearVision Analytics, shares his experience with DermCheck, an AI that screens for skin cancer. Since 2020, DermCheck has detected over 2,000 cases of skin cancer and avoided 20,000 unnecessary appointments. He emphasizes the need for greater promotion of AI’s benefits to encourage investment and make such technologies more widely accepted in healthcare. However, he also acknowledges the growing concern over patient data privacy. Ensuring that sensitive medical data is securely handled is essential for building trust in AI systems.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">On the other hand, Dr. Robert Green, a healthcare technology consultant, argues that for AI to succeed, the digital infrastructure in healthcare must be upgraded. Many healthcare settings still use paper records, and existing digital systems don’t always communicate with each other. Without better integration, AI systems will struggle to be fully effective, limiting their potential benefits. Additionally, Dr. Green highlights the importance of establishing robust data protection protocols to prevent unauthorized access to sensitive health information.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Meanwhile, Professor Clara Martin, a healthcare policy expert, focuses on the importance of regulation. While she supports AI’s role in improving patient care, she stresses that effective monitoring, evaluation, and strong privacy safeguards are necessary to ensure its continued success. As AI systems evolve with the data they process, it becomes even more critical to ensure that these systems adhere to strict privacy and security standards to protect patients' sensitive information.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">AI can transform healthcare, but careful planning and robust privacy protections are essential. Whether it’s improving infrastructure, regulation, or promoting transparency, the goal is to ensure AI technologies are used effectively, fairly, and securely for all patients.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. How do Dr. Green views compare to Dr. Thompson’s?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">They agree that it needs more security measures.</option>
+<option value="Option2">They believe AI should be avoided entirely.</option>
+<option value="Option3">They agree that AI should be implemented immediately.</option>
+<option value="Option4">They both focus on patient treatment with disregard to regulatory issues.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. What is the main benefit of the AI system CareRemind?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">It provides personalized treatment plans for patients.</option>
+<option value="Option2">It reduces the number of hospital appointments required.</option>
+<option value="Option3">It helps reduce the number of missed appointments and saves resources.</option>
+<option value="Option4">It automatically diagnoses health conditions based on medical records.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. From the text, we can reasonably conclude that...</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">All experts agree on the importance of privacy but disagree on AI's potential.</option>
+<option value="Option2">Each expert has a different focus but they agree that AI can improve healthcare.</option>
+<option value="Option3">Dr. Green is the only one concerned about data privacy.</option>
+<option value="Option4">Professor Martin believes that AI should not be used in healthcare.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. Which of the following best summarizes the main point of the text?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">AI is already transforming healthcare, and experts believe it is mostly positive, with some challenges.</option>
+<option value="Option2">AI technologies are only beneficial in diagnostics and have no other applications in healthcare.</option>
+<option value="Option3">Data privacy concerns make AI too risky to implement in healthcare systems.</option>
+<option value="Option4">Healthcare systems should focus more on improving physical infrastructure rather than adopting AI technologies.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. How does Dr. Liam Thompson view the adoption of AI in healthcare?</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">He believes more investment is needed but is also concerned about data security.</option>
+<option value="Option2">He thinks AI should be rolled out immediately across all healthcare settings.</option>
+<option value="Option3">He argues that AI should be avoided due to potential security risks.</option>
+<option value="Option4">He believes that data privacy issues should be handled by government agencies alone.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">I read the article about AI in healthcare, and while it sounds impressive, I can’t help but feel skeptical. AI systems like CareRemind, which are supposed to</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">improve healthcare providers' decision-making</option>
+<option value="Option2">decrease the frequency of skipped medical appointments</option>
+<option value="Option3">automate patient record management</option>
+<option value="Option4">optimize patient scheduling systems</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">, might have some value, but they won’t be truly effective until the healthcare system addresses broader challenges. Issues like</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">socioeconomic disparities</option>
+<option value="Option2">insufficient AI system transparency</option>
+<option value="Option3">fragmented communication between healthcare providers and patients</option>
+<option value="Option4">lack of patient adherence to medical recommendations</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">, which Dr. Johnson highlights as a root cause of missed appointments, can’t be fixed by technology alone.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline"></p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">Then there’s DermCheck, the AI tool for skin cancer screening. Dr. Thompson is optimistic that</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">DermCheck will revolutionize early cancer detection</option>
+<option value="Option2">DermCheck will help avoid superfluous consultations</option>
+<option value="Option3">DermCheck will be a cost-effective alternative to human examination</option>
+<option value="Option4">DermCheck will significantly reduce the number of false positives</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">, but I wonder about its limitations. What happens if</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">data breaches exposing sensitive health information</option>
+<option value="Option2">overreliance on technology at the expense of patient care</option>
+<option value="Option3">bias in AI algorithms leading to unequal outcomes</option>
+<option value="Option4">system failures causing diagnostic errors</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">occurs? Relying too heavily on AI might put patients at risk, even if its benefits sound appealing.</p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline"></p>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<br/><!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">And as Professor Martin wisely points out, while she supports AI’s potential, she stresses the importance of ensuring that AI systems are properly monitored to protect patient data. Without these measures, the implementation of AI could be more harmful than helpful. I fully agree with her that</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">creating AI-centric healthcare frameworks</option>
+<option value="Option2">empowering patients to trust digital health tools</option>
+<option value="Option3">ensuring AI systems undergo continuous ethical audits</option>
+<option value="Option4">improving healthcare providers' ability to integrate new technologies</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        must be a priority for in order to guarantee that healthcare AI systems evolve safely and effectively."<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

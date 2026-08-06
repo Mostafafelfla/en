@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="MIctpOzgN7KWsT9EOc5HRvBm2TgCUQRnBJCvaki5YuPXGZWxIN2gCGyQgNDdWKMl"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 12 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Live-in Caregiver Amy Mercado is concerned that current policy reforms in the Canadian Temporary Foreign Worker Program are simply band-aid solutions to bigger issues. The program allows Canadian families to hire foreign workers to live temporarily in their homes and care for elderly, young, or disabled citizens. The program is one of three ways that immigrants can acquire permanent Canadian residency. Originally trained as a nurse, Mercado came to Canada from the Philippines 13 years ago to work as a live-in caregiver. She is now a Canadian citizen. Suffering verbal harassment in the first few years of her employment, she’s only too aware of how often live-in caregivers face unsafe working standards. “Although foreign live-in caregivers are technically under the same labour laws as Canadian workers, they work and live in someone else’s private home,” Mercado explains. “They can suffer a lot of unseen damage.”</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Ministry Official Mark Swanson says that while the program is nowhere near perfect, they’re trying their best to reform it. “Recent protections, such as the implementation of a standardized employment contract between caregivers and families and a phone help line for caregivers, have made a big difference,” Swanson says. One of the major changes was allowing caregivers to apply for open work permits while waiting for residency. However, the program is currently backlogged with about 80,000 applicants, and wait times can be up to 38 months.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Mercado says policy changes are helpful, but are not enough. One of the greatest challenges that caregivers face is having to leave their own children and families behind in their home country. The wait time for residency means they are separated for several years. “It’s sad and ironic, I took care of other people’s children for 3 years while I was separated from my own,” Mercado says. “Family reunification needs to be made the top priority for policy reform.”</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Although the Live-in Caregiver Program needs to be reformed, it appears what’s subsequently needed is federal investment in childcare and old-age programs. Foreign supply of labour is a mere band-aid solution to Canada’s lack of funding for such programs.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. Mercado would probably agree that</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">caregivers should be paid more.</option>
+<option value="Option2">caregivers are lucky to have jobs.</option>
+<option value="Option3">caregivers should live with their families.</option>
+<option value="Option4">caregivers should translate their contracts.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. In addition to the current reform plan, Mercado would probably want</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">a more efficient process for residency.</option>
+<option value="Option2">better protection against employer abuse.</option>
+<option value="Option3">quicker ways of bringing her family to Canada.</option>
+<option value="Option4">an ability to change caregiver jobs.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. The Temporary Foreign Worker Program is popular because</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">it requires the immigrant to have a job.</option>
+<option value="Option2">it allows immigrants to work at a variety of jobs.</option>
+<option value="Option3">it speeds up citizenship application.</option>
+<option value="Option4">it provides an opportunity to apply for residency.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. According to Swanson, the Temporary Foreign Worker Program</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">is undergoing successful reform.</option>
+<option value="Option2">is no longer a government priority.</option>
+<option value="Option3">requires many more reforms to be effective.</option>
+<option value="Option4">will have reduced wait times in the near future.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. The author of the article thinks that a bigger need than these policy reforms is</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">better budgeting for senior-care programs.</option>
+<option value="Option2">better schooling in childcare programs.</option>
+<option value="Option3">improved protection against harassment.</option>
+<option value="Option4">quicker availability of open work permits.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">After reading today’s article, I was shocked to learn that</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">abuse still happens to caregivers.</option>
+<option value="Option2">caregivers are still living with families.</option>
+<option value="Option3">the government isn’t supporting caregivers.</option>
+<option value="Option4">caregivers can’t change jobs.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">This has been reported for many years. Why is it still happening? Caregivers should be able to</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">complain about their workplace conditions,</option>
+<option value="Option2">complain to their employers,</option>
+<option value="Option3">visit with their families and friends,</option>
+<option value="Option4">take vacations to visit family,</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">just like anyone else. Caregivers should receive fair pay and be protected by</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">their contracts.</option>
+<option value="Option2">the local police.</option>
+<option value="Option3">the labour laws.</option>
+<option value="Option4">their employers.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">How can help lines work? If a caregiver is being harassed, a chat on the helpline</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">won’t solve the problem.</option>
+<option value="Option2">will alert the police.</option>
+<option value="Option3">won’t change the family.</option>
+<option value="Option4">will increase the problems.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">How are the open work permits going to help? By the time caregivers are allowed to change jobs, perhaps</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">another caregiver position will not be available .</option>
+<option value="Option2">they will want to leave Canada.</option>
+<option value="Option3">the wait for work permits may be even longer.</option>
+<option value="Option4">they can get jobs as nurses.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+         Considering everything, I think caregivers must be admired for their hard-work and dedication.<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>

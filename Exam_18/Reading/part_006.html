@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/asset_0.png" rel="icon"/>
+<title>CelpipExpress | Reading Test</title>
+<link href="../../assets/asset_1.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="../../assets/asset_3.js"></script>
+<script src="../../assets/asset_4.js"></script>
+<!-- Include Chart.js -->
+<script src="../../assets/asset_5.js"></script>
+<!-- Include Chart.js date adapter -->
+<script src="../../assets/asset_6.bin"></script>
+<link href="../../assets/asset_2.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="text-white text-center">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="../../choose-exam.html">
+<img alt="Logo" class="d-inline-block align-top" src="../../assets/asset_13.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../student-dashboard.html">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../choose-exam.html">New Test</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div>
+<div class="container">
+<div id="main">
+<head>
+<script src="../../assets/asset_15.js"></script>
+<script>
+    var timeLimitInMinutes = 13;
+    var timeLimitInSeconds = timeLimitInMinutes * 60;
+    var time_out = setInterval(() => {
+      var minutes = Math.floor(timeLimitInSeconds / 60);
+      var seconds = timeLimitInSeconds % 60;
+      if(timeLimitInSeconds == 0) {
+        $('#timer').html('Time Over');
+      } else {
+        if (minutes < 10) {
+          minutes = minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        $('#timer').html(minutes + " minutes");
+        timeLimitInSeconds--;
+      }
+    }, 1000);
+  </script>
+<script src="../../assets/asset_8.js"></script>
+<script src="../../assets/asset_16.js"></script>
+<style media="screen">
+    select option {
+      font-size: min(2vw, 16px);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<form autocomplete="off" class="form" method="POST" onsubmit="return saveAns()">
+<input name="csrfmiddlewaretoken" type="hidden" value="Heg7s8CVJBdLXd00cgWdRsrnH6gDLDEqwfG9dElKUYiMbjNT6RTMCDoRV0DeNxzo"/>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div>
+<p>Practice Test 14 - Reading Part 4: Reading for Viewpoints</p>
+</div>
+<div id="timerRow">
+<p id="countdown-header">Time remaining:</p>
+<b><span id="timer" style="color: #0056bf">13 minutes</span></b>
+</div>
+<div class="align-right">
+<a class="btn btn-primary" href="answer-key.html" style="padding:10px 30px; background:#0056bf; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">Next (Offline Mode)</a></div>
+</div>
+</div>
+<div id="mainContent">
+<div class="col-md-6" id="left">
+<div>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Global warming has drastically reduced the extent of sea ice in the Canadian high Arctic, whose islands are now navigable in summer without ice-breaking equipment. Recently a Danish coal carrier vessel, the Aurora Borealis, navigated this route from Vancouver, Canada to Pori, Finland. “We’ve proven the Northwest Passage is open to the world as a viable transoceanic shipping route. It shaved four days, 2,000 kilometres, and $200,000 off the Panama Canal route, and its deeper waters let us carry 25% more cargo,” said company spokesman Marcus Lindstrom.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">Like its Scandinavian and Russian counterparts, the Canadian government considers its arctic passage a national territorial waterway. Deemed “historic internal waters,” the route falls unquestionably under Canadian jurisdiction, explains Northern Development Minister Bruce Anderson. Anderson applauds a new atlas produced by cartographer Adriana Chevrier and Inuit elders, showing Inuit land and sea ice routes dating back centuries and shoring up Canada’s claim to the Arctic archipelago by virtue of the legal principle of long-time use and occupancy. Modern commercial traffic helps, too. As international law professor Zachary Michaels said in a public lecture, “Valuable legal precedents are established every time a foreign vessel makes the crossing while complying with its legal obligation to register with and be monitored by the Canadian Coast Guard.” Beyond that, annual prime ministerial visits and Canadian Forces exercises in the region bolster Canada’s claim.</p>
+<p style="font-size: min(2vw, 16px); font-weight: 700"></p>
+<p style="font-size: min(2vw, 16px); font-weight: 700">However, Canadian arctic sovereignty is recognized by neither the EU nor the US, the latter due to Republican-backed non-ratification of UNCLOS (the UN Convention on the Law of the Sea). The US considers the Northwest Passage an international waterway, balking at its northern neighbour’s registration and monitoring requirements and once allegedly steering a nuclear-powered submarine through the route without permission. “Recognition of Canadian arctic sovereignty would be detrimental to our economic interests,” said Republican senator Morris Homeniuk, who points out that Canada still owns no reliable modern patrol vessels, often depending on the US Talisman to escort its ageing Canadian icebreaker to safety. “This is not what sovereignty looks like,” says Homeniuk.</p>
+</div>
+</div>
+<div class="col-md-6" id="right">
+<div class="instruction">
+<p>
+          Using the drop-down menu
+          <span style="font-size: min(2vw, 16px)">(▾)</span>, choose the best
+          option according to the information given on the website.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownStatments" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<div style="display: block">
+<div style="display: inline-block">1. The Aurora Borealis serves as evidence of the</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">advantage of the Panama Canal over the Northwest Passage.</option>
+<option value="Option2">beneficial effect of global warming on one industry sector.</option>
+<option value="Option3">defiance of Canadian shipping laws by a foreign vessel.</option>
+<option value="Option4">need for military reinforcements in the Canadian Arctic.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">2. The best title for Michaels' lecture would be “Arctic Sovereignty:</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">A Historical Passage.”</option>
+<option value="Option2">Maybe This Time: The Impacts of Climate Change.”</option>
+<option value="Option3">The American Dream.”</option>
+<option value="Option4">Use It or Lose It.”</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">3. Homeniuk’s opinion rests on his country’s</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">economic strength.</option>
+<option value="Option2">historical precedents.</option>
+<option value="Option3">nuclear capability.</option>
+<option value="Option4">cartographic superiority.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">4. The controversy will probably be resolved if</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">ageing Canadian icebreakers are retired.</option>
+<option value="Option2">American senators ratify the convention.</option>
+<option value="Option3">evidence of use and occupancy is uncovered.</option>
+<option value="Option4">present polar icecap melting rates continue.</option>
+</select>
+</div>
+</div>
+<div style="display: block">
+<div style="display: inline-block">5. Homeniuk doubts the effectiveness of the</div>
+<div style="display: inline-block">
+<select id="dropdown1" name="dropdown1">
+<option value="None"></option>
+<option value="Option1">Coast Guard.</option>
+<option value="Option2">Aurora Borealis.</option>
+<option value="Option3">Northwest Passage.</option>
+<option value="Option4">US Talisman.</option>
+</select>
+</div>
+</div>
+</div>
+<div class="instruction">
+<p>
+          The following is a comment by a visitor to the website page. Complete
+          the comment by choosing the best option to fill in each blank.
+        </p>
+</div>
+<div class="wellBlueBG" id="inlineDropDownLetter" style="
+          font-size: min(2vw, 16px);
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          line-height: 2em;
+        ">
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">Well, the Cold-War era feds tried to strengthen their “use and occupancy”-based sovereignty claim by relocating Inuit families from northern Quebec to remote, barely inhabitable islands in the highest Arctic—in effect, using people as</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            6.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">bait.</option>
+<option value="Option2">flags.</option>
+<option value="Option3">shields.</option>
+<option value="Option4">weapons.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">The sovereignty issue persists, except now the threat isn’t Stalin; it’s</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            7.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">the US.</option>
+<option value="Option2">Denmark.</option>
+<option value="Option3">the EU.</option>
+<option value="Option4">Panama.</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">With the</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            8.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">historical mapping</option>
+<option value="Option2">escorted icebreakers</option>
+<option value="Option3">nuclear submarines</option>
+<option value="Option4">year-round access</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">and the military operations, Ottawa’s grip on the Northwest Passage has been strengthened. But what about community stakeholders? For us, Arctic sovereignty is not the international</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            9.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">health and safety</option>
+<option value="Option2">legal and military</option>
+<option value="Option3">moral and ethical</option>
+<option value="Option4">culture and preservation</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">problem that it is for the federal government. We are instead worried that heavy commercial traffic through the archipelago will court ecological calamity. Therefore, we believe that every discussion about Arctic sovereignty should also be a discussion about responsible</p>
+<div style="
+            font-size: min(2vw, 16px);
+            font-weight: 700;
+            display: inline-block;
+          ">
+<p style="font-size: min(2vw, 16px); font-weight: 700; display: inline">
+            10.
+            <select aria-label="Default select example" class="form-select" id="dropdown2" name="dropdown2">
+<option selected="selected" value="None"></option>
+<option value="Option1">operation of ice-breaking equipment</option>
+<option value="Option2">fuel alternatives for northern communities</option>
+<option value="Option3">negotiation with the US government</option>
+<option value="Option4">conservation of endangered waterways</option>
+</select>
+</p>
+</div>
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+        .<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+<!-- prettier-ignore -->
+</div>
+</div>
+</div>
+<div class="row" id="rowHeader">
+<div id="panelTop">
+<div class="align-left">
+<a class="btn btn-success" href="answer-key.html" style="padding:10px 20px; background:#28a745; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">Answer Key (Offline)</a>
+</div>
+<div class="align-right">
+<input class="btn" id="backBtn" onclick="javascript:history.go(-1);" type="button" value="Back"/>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  $("select")
+    .change(function () {
+      var text = $(this).find("option:selected").text();
+      var $aux = $("<select/>").append($("<option/>").text(text));
+      $(this).after($aux);
+      $(this).width($aux.width());
+      $aux.remove();
+    })
+    .change();
+</script>
+</div>
+</div>
+</div>
+<script src="../../assets/asset_7.js"></script>
+<script src="../../assets/asset_10.js"></script>
+<script src="../../assets/asset_11.js"></script>
+<script src="../../assets/asset_12.js"></script>
+<script src="../../assets/offline_logic.js"></script></body>
+</html>
