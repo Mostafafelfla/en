@@ -31,10 +31,13 @@ jobs:
           mkdir -p extracted
           unzip -q site.zip -d extracted
           
-          # 3. تنظيف المستودع الحالي مع الحفاظ على ملفات النظام و .github
-          find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' -exec rm -rf {} +
+          # 3. تنظيف المستودع الحالي (مع استثناء مجلد extracted وملف site.zip حتى لا يتم حذفهما)
+          find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' ! -name 'extracted' ! -name 'site.zip' -exec rm -rf {} +
 
-          # 4. نقل الملفات بذكاء: لو فيه مجلد رئيسي واحد جوه الـ zip انقل محتواه، لو ملفات منفضة نقلها مباشرة
+          # 4. السماح بنقل الملفات المخفية (إن وجدت)
+          shopt -s dotglob
+
+          # 5. نقل الملفات بذكاء
           CONTENTS=(extracted/*)
           if [ ${#CONTENTS[@]} -eq 1 ] && [ -d "${CONTENTS[0]}" ]; then
             cp -r "${CONTENTS[0]}"/* ./
@@ -42,7 +45,10 @@ jobs:
             cp -r extracted/* ./
           fi
           
-          # 5. تنظيف الملفات المؤقتة
+          # إلغاء تفعيل نقل الملفات المخفية للوضع الافتراضي
+          shopt -u dotglob
+          
+          # 6. تنظيف الملفات المؤقتة
           rm -rf site.zip extracted
 
       - name: Commit and Push Extracted Files
