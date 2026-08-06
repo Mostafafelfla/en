@@ -1,4 +1,4 @@
-name: Build and Push Processed Files
+name: Download and Extract to Repo
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-push:
+  download-and-extract:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -17,33 +17,33 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
-        run: pip install beautifulsoup4 gdown
+      - name: Install gdown
+        run: pip install gdown
 
       - name: Download & Extract from Google Drive
         run: |
+          # تحميل الملف المضغوط
           gdown 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
-          unzip -q site.zip -d extracted
-          ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
-          mkdir -p public
-          mv "$ROOT_DIR"/* public/
-
-      - name: Run Build Script (Python Fixes)
-        run: python build.py
-
-      - name: Move processed files to root for repository storage
-        run: |
-          # حذف الملفات القديمة من المستودع ما عدا ملفات الـ workflows وبايثون
-          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name '.github' ! -name 'build.py' ! -name 'README.md' -exec rm -rf {} +
           
-          # نقل الملفات المعالجة من public إلى الجذر الرئيسي للمستودع
-          cp -r public/* ./
-          rm -rf public
+          # فك الضغط في مجلد مؤقت
+          unzip -q site.zip -d extracted
+          
+          # العثور على المجلد الذي يحتوي علىchoose-exam.html بداخله
+          ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
+          
+          # حذف الملفات القديمة في المستودع (مع الحفاظ على .git و .github)
+          find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' -exec rm -rf {} +
+          
+          # نقل كل ملفات الموقع المفكوكة إلى الجذر الرئيسي مباشرة
+          mv "$ROOT_DIR"/* ./
+          
+          # تنظيف الملفات المؤقتة
+          rm -rf site.zip extracted
 
-      - name: Commit and Push Processed Files to Main
+      - name: Commit and Push to Main
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Auto-processed and fixed exam files [skip ci]" || exit 0
+          git commit -m "Auto-extracted site files from Google Drive [skip ci]" || exit 0
           git push
