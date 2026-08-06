@@ -24,29 +24,26 @@ jobs:
 
       - name: Download and Extract from Google Drive
         run: |
-          # تحميل الملف المضغوط بالرابط الجديد
+          # 1. تحميل الملف المضغوط
           gdown 1W6JWZzlm6CzH2hnNdB9NcKvptLjv1t_P -O site.zip
           
-          # فك الضغط في مجلد مؤقت
+          # 2. فك الضغط في مجلد مؤقت
           mkdir -p extracted
           unzip -q site.zip -d extracted
           
-          # نقل الملفات إلى مجلد مؤقت آمن
-          if find extracted -name "choose-exam.html" | grep -q .; then
-            ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
-            mkdir -p temp_root
-            mv "$ROOT_DIR"/* temp_root/
-          else
-            mkdir -p temp_root
-            mv extracted/* temp_root/
-          fi
-
-          # تنظيف المستودع الحالي مع الحفاظ على ملفات النظام و .github
+          # 3. تنظيف المستودع الحالي مع الحفاظ على ملفات النظام و .github
           find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' -exec rm -rf {} +
 
-          # نقل الملفات المفكوكة إلى الجذر الرئيسي للمستودع
-          cp -r temp_root/* ./
-          rm -rf site.zip extracted temp_root
+          # 4. نقل الملفات بذكاء: لو فيه مجلد رئيسي واحد جوه الـ zip انقل محتواه، لو ملفات منفضة نقلها مباشرة
+          CONTENTS=(extracted/*)
+          if [ ${#CONTENTS[@]} -eq 1 ] && [ -d "${CONTENTS[0]}" ]; then
+            cp -r "${CONTENTS[0]}"/* ./
+          else
+            cp -r extracted/* ./
+          fi
+          
+          # 5. تنظيف الملفات المؤقتة
+          rm -rf site.zip extracted
 
       - name: Commit and Push Extracted Files
         run: |
