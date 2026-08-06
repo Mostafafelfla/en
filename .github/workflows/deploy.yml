@@ -1,4 +1,4 @@
-name: Download and Extract to Repo
+name: Download and Extract Zip to Repo
 
 on:
   push:
@@ -6,8 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  download-and-extract:
+  extract-zip:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -20,30 +22,36 @@ jobs:
       - name: Install gdown
         run: pip install gdown
 
-      - name: Download & Extract from Google Drive
+      - name: Download and Extract from Google Drive
         run: |
-          # تحميل الملف المضغوط
-          gdown 1RafxMgCb0sWSZwpyM-Wj-xIZY3Aci4tm -O site.zip
+          # تحميل الملف المضغوط بالرابط الجديد
+          gdown 1W6JWZzlm6CzH2hnNdB9NcKvptLjv1t_P -O site.zip
           
           # فك الضغط في مجلد مؤقت
+          mkdir -p extracted
           unzip -q site.zip -d extracted
           
-          # العثور على المجلد الذي يحتوي علىchoose-exam.html بداخله
-          ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
-          
-          # حذف الملفات القديمة في المستودع (مع الحفاظ على .git و .github)
-          find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' -exec rm -rf {} +
-          
-          # نقل كل ملفات الموقع المفكوكة إلى الجذر الرئيسي مباشرة
-          mv "$ROOT_DIR"/* ./
-          
-          # تنظيف الملفات المؤقتة
-          rm -rf site.zip extracted
+          # نقل الملفات إلى مجلد مؤقت آمن
+          if find extracted -name "choose-exam.html" | grep -q .; then
+            ROOT_DIR=$(dirname $(find extracted -name "choose-exam.html" | head -n 1))
+            mkdir -p temp_root
+            mv "$ROOT_DIR"/* temp_root/
+          else
+            mkdir -p temp_root
+            mv extracted/* temp_root/
+          fi
 
-      - name: Commit and Push to Main
+          # تنظيف المستودع الحالي مع الحفاظ على ملفات النظام و .github
+          find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.github' ! -name 'README.md' -exec rm -rf {} +
+
+          # نقل الملفات المفكوكة إلى الجذر الرئيسي للمستودع
+          cp -r temp_root/* ./
+          rm -rf site.zip extracted temp_root
+
+      - name: Commit and Push Extracted Files
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Auto-extracted site files from Google Drive [skip ci]" || exit 0
+          git commit -m "Auto-extract zip file from Google Drive [skip ci]" || exit 0
           git push
